@@ -36,6 +36,7 @@ class UserController extends AbstractActionController
     }
 
     /**
+     * @return array|ViewModel
      * This is the default "index" action of the controller. It displays the
      * list of users.
      */
@@ -50,6 +51,7 @@ class UserController extends AbstractActionController
     }
 
     /**
+     * @return \Zend\Http\Response|ViewModel
      * This action displays a page allowing to add a new user.
      */
     public function addAction()
@@ -86,6 +88,7 @@ class UserController extends AbstractActionController
     }
 
     /**
+     * @return ViewModel
      * The "view" action displays a page allowing to view user's details.
      */
     public function viewAction()
@@ -111,6 +114,7 @@ class UserController extends AbstractActionController
     }
 
     /**
+     * @return \Zend\Http\Response|ViewModel
      * The "edit" action displays a page allowing to edit user.
      */
     public function editAction()
@@ -168,6 +172,7 @@ class UserController extends AbstractActionController
     }
 
     /**
+     * @return \Zend\Http\Response|ViewModel
      * This action displays a page allowing to change user's password.
      */
     public function changePasswordAction()
@@ -225,6 +230,7 @@ class UserController extends AbstractActionController
     }
 
     /**
+     * @return \Zend\Http\Response|ViewModel
      * This action displays the "Reset Password" page.
      */
     public function resetPasswordAction()
@@ -267,6 +273,8 @@ class UserController extends AbstractActionController
     }
 
     /**
+     * @return ViewModel
+     * @throws \Exception
      * This action displays an informational message page.
      * For example "Your password has been resetted" and so on.
      */
@@ -286,6 +294,8 @@ class UserController extends AbstractActionController
     }
 
     /**
+     * @return \Zend\Http\Response|ViewModel
+     * @throws \Exception
      * This action displays the "Reset Password" page.
      */
     public function setPasswordAction()
@@ -336,5 +346,37 @@ class UserController extends AbstractActionController
         return new ViewModel([
             'form' => $form
         ]);
+    }
+
+
+    public function deleteAction()
+    {
+        $id = (int)$this->params()->fromRoute('id', -1);
+        if ($id<1) {
+            $this->getResponse()->setStatusCode(404);
+            return;
+        }
+
+        // Verification of the existence of the user
+        $user = $this->entityManager->getRepository(User::class)
+            ->find($id);
+
+        if( !$user ) {
+            throw new \Exception('Such a user does not exist');
+        }
+
+        // Delete user.
+        $result = $this->userManager->deleteUser($user);
+
+        if( $result ) {
+            // Success Flash message
+
+        } else {
+            // Fails Flash message
+
+        }
+
+        // Redirect to "index" page
+        return $this->redirect()->toRoute('users');
     }
 }

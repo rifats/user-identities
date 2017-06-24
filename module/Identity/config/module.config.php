@@ -1,11 +1,5 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 namespace Identity;
 
 use Doctrine\ORM\Mapping\Driver\AnnotationDriver;
@@ -51,8 +45,12 @@ return [
     ],
     'controllers' => [
         'factories' => [
-            Controller\IdentityController::class =>
-                Controller\Factory\IdentityControllerFactory::class,
+            Controller\IdentityController::class => Controller\Factory\IdentityControllerFactory::class,
+        ],
+    ],
+    'service_manager' => [
+        'factories' => [
+            Service\IdentityManager::class => Service\Factory\IdentityManagerFactory::class,
         ],
     ],
 ];

@@ -220,6 +220,7 @@ class UserManager
 
         // Check that old password is correct
         if (!$this->validatePassword($user, $oldPassword)) {
+
             return false;
         }
 
@@ -227,6 +228,7 @@ class UserManager
 
         // Check password length
         if (strlen($newPassword)<6 || strlen($newPassword)>64) {
+
             return false;
         }
 
@@ -237,6 +239,24 @@ class UserManager
 
         // Apply changes
         $this->entityManager->flush();
+
         return true;
+    }
+
+    /**
+     * @param $user
+     * @return bool
+     * This method deletes user data with identities from DB.
+     */
+    public function deleteUser($user)
+    {
+        if ( null == $this->entityManager->remove($user) ) {
+
+            //$this->entityManager->flush();
+
+            return true;
+        }
+
+        return false;
     }
 }

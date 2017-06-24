@@ -15,10 +15,11 @@ class IdentityControllerFactory implements FactoryInterface
     public function __invoke(ContainerInterface $container,
                              $requestedName, array $options = null)
     {
-        $entityManager = $container->get('doctrine.entitymanager.orm_default');
-        $identityManager = $container->get(IdentityManager::class);
+        $entityManager      = $container->get('doctrine.entitymanager.orm_default');
+        $authService        = $container->get(\Zend\Authentication\AuthenticationService::class);
+        $identityManager    = $container->get(IdentityManager::class);
 
         // Инстанцируем контроллер и внедряем зависимости.
-        return new IdentityController($entityManager, $identityManager);
+        return new IdentityController($entityManager, $authService, $identityManager);
     }
 }

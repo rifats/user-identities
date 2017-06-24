@@ -27,8 +27,16 @@ class IdentityManager
     /**
      * This method adds a new identity.
      */
-    public function addIdentity($data)
+    public function addIdentity($data, $authorizedUser=null)
     {
+        // Do not allow identity without userId
+        if( !$authorizedUser ) {
+            throw new \Exception("Identity must belong to a user");
+        }
+
+        $user = $this->entityManager->getRepository(\User\Entity\User::class)
+            ->find($authorizedUser->getId());
+
         // Do not allow identity with same Serial number.
         /*
         if($this->checkUserExists($data['email'])) {
@@ -38,10 +46,11 @@ class IdentityManager
 
         // Create new Identity entity.
         $identity = new Identity();
-        $identity->setIdenttype($data['identtype']);
+        $identity->setIdenttype($data['identType']);
         $identity->setName($data['name']);
         $identity->setSurname($data['surname']);
-        // Другие поля
+        $identity->setUser($user);
+        // Другие поля добавить
 
         $currentDate = date('Y-m-d H:i:s');
         $identity->setDateCreated($currentDate);

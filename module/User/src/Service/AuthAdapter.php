@@ -93,7 +93,7 @@ class AuthAdapter implements AdapterInterface
         if ($bcrypt->verify($this->password, $passwordHash)) {
             // Great! The password hash matches. Return user identity (email) to be
             // saved in session for later use.
-
+            // TODO Перед возвратом убрать из $user пароль и другие ненужные поля
             return new Result(
                 Result::SUCCESS,
                 $user,

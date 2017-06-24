@@ -65,7 +65,7 @@ class UserForm extends Form
             ],
         ]);
 
-        // Add "full_name" field
+        // Add "username" field
         $this->add([
             'type'  => 'text',
             'name' => 'username',

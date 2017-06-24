@@ -1,33 +1,51 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-namespace Application\Form;
+namespace Identity\Form;
 
 use Zend\Form\Form;
 use Zend\InputFilter\InputFilter;
 
 /**
- * 
+ * Class IdentityForm
+ * @package Application\Form
  */
 class IdentityForm extends Form
 {
-    // Конструктор.   
-    public function __construct()
+    /**
+     * Scenario ('create' or 'update').
+     * @var string
+     */
+    private $scenario;
+
+    /**
+     * Entity manager.
+     * @var \Doctrine\ORM\EntityManager
+     */
+    private $entityManager = null;
+
+    /**
+     * Current user.
+     * @var \User\Entity\User
+     */
+    private $user = null;
+
+    /**
+     * Constructor.
+     */
+    public function __construct($scenario = 'create', $entityManager = null, $user = null)
     {
         // Определяем имя формы
         parent::__construct('identity-form');
 
-        // Задаем метод POST для этой формы
+        // Set POST method for this form
         $this->setAttribute('method', 'post');
-        	
-        // Добавляем элементы формы
+
+        // Save parameters for internal use.
+        $this->scenario = $scenario;
+        $this->entityManager = $entityManager;
+        $this->user = $user;
+
         $this->addElements();
-        
         $this->addInputFilter();
     }
     
@@ -37,13 +55,18 @@ class IdentityForm extends Form
     {
         // Identity type
         $this->add([
-	    'type'  => 'text',
+            'type'  => 'select',
             'name' => 'identType',
             'attributes' => [                
                 'id' => 'identType'
             ],
             'options' => [
                 'label' => 'Identity type',
+                'value_options' => [
+                    'passport' => 'Passport',
+                    'f_passport' => 'Foreign passport',
+                    'd_license' => 'Driving license',
+                ]
             ],
         ]);
         
@@ -85,9 +108,41 @@ class IdentityForm extends Form
     {
         $inputFilter = new InputFilter();        
         $this->setInputFilter($inputFilter);
-        
+
+        // Add input for "name" field
         $inputFilter->add([
-            // add filter
-        ]);              
+            'name'     => 'name',
+            'required' => true,
+            'filters'  => [
+                ['name' => 'StringTrim'],
+            ],
+            'validators' => [
+                [
+                    'name'    => 'StringLength',
+                    'options' => [
+                        'min' => 1,
+                        'max' => 30
+                    ],
+                ],
+            ],
+        ]);
+
+        // Add input for "surname" field
+        $inputFilter->add([
+            'name'     => 'surname',
+            'required' => true,
+            'filters'  => [
+                ['name' => 'StringTrim'],
+            ],
+            'validators' => [
+                [
+                    'name'    => 'StringLength',
+                    'options' => [
+                        'min' => 1,
+                        'max' => 40
+                    ],
+                ],
+            ],
+        ]);
     }
 }

@@ -70,6 +70,14 @@ return [
             Controller\UserController::class => Controller\Factory\UserControllerFactory::class,
         ],
     ],
+    'service_manager' => [
+        'factories' => [
+            \Zend\Authentication\AuthenticationService::class => Service\Factory\AuthenticationServiceFactory::class,
+            Service\AuthAdapter::class => Service\Factory\AuthAdapterFactory::class,
+            Service\AuthManager::class => Service\Factory\AuthManagerFactory::class,
+            Service\UserManager::class => Service\Factory\UserManagerFactory::class,
+        ],
+    ],
     // The 'access_filter' key is used by the User module to restrict or permit
     // access to certain controller actions for unauthorized visitors.
     'access_filter' => [
@@ -82,14 +90,6 @@ return [
                 ['actions' => ['index', 'add', 'edit', 'view', 'changePassword'], 'allow' => '@']
             ],
         ]
-    ],
-    'service_manager' => [
-        'factories' => [
-            \Zend\Authentication\AuthenticationService::class => Service\Factory\AuthenticationServiceFactory::class,
-            Service\AuthAdapter::class => Service\Factory\AuthAdapterFactory::class,
-            Service\AuthManager::class => Service\Factory\AuthManagerFactory::class,
-            Service\UserManager::class => Service\Factory\UserManagerFactory::class,
-        ],
     ],
     'view_manager' => [
         'template_path_stack' => [

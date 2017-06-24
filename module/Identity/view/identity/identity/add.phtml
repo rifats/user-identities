@@ -1,5 +1,5 @@
 <?php
-$this->headTitle('Add User');
+$this->headTitle('Add Identity');
 
 /*
 $this->mainMenu()->setActiveItemId('users');
@@ -11,26 +11,19 @@ $this->pageBreadcrumbs()->setItems([
 ]);
 */
 
-$form->get('email')->setAttributes([
+$form->get('identType')->setAttributes([
     'class'=>'form-control',
-    'placeholder'=>'name@example.com'
+    'placeholder'=>'passport'
 ]);
 
-$form->get('username')->setAttributes([
+$form->get('name')->setAttributes([
     'class'=>'form-control',
-    'placeholder'=>'John Doe'
+    'placeholder'=>'John'
 ]);
 
-$form->get('status')->setAttributes([
-    'class'=>'form-control'
-]);
-
-$form->get('password')->setAttributes([
-    'class'=>'form-control'
-]);
-
-$form->get('confirm_password')->setAttributes([
-    'class'=>'form-control'
+$form->get('surname')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>'Doe'
 ]);
 
 $form->get('submit')->setAttributes(['class'=>'btn btn-primary']);
@@ -48,33 +41,21 @@ $form->prepare();
         <?= $this->form()->openTag($form); ?>
 
         <div class="form-group">
-            <?= $this->formLabel($form->get('email')); ?>
-            <?= $this->formElement($form->get('email')); ?>
-            <?= $this->formElementErrors($form->get('email')); ?>
+            <?= $this->formLabel($form->get('identType')); ?>
+            <?= $this->formElement($form->get('identType')); ?>
+            <?= $this->formElementErrors($form->get('identType')); ?>
         </div>
 
         <div class="form-group">
-            <?= $this->formLabel($form->get('username')); ?>
-            <?= $this->formElement($form->get('username')); ?>
-            <?= $this->formElementErrors($form->get('username')); ?>
+            <?= $this->formLabel($form->get('name')); ?>
+            <?= $this->formElement($form->get('name')); ?>
+            <?= $this->formElementErrors($form->get('name')); ?>
         </div>
 
         <div class="form-group">
-            <?= $this->formLabel($form->get('password')); ?>
-            <?= $this->formElement($form->get('password')); ?>
-            <?= $this->formElementErrors($form->get('password')); ?>
-        </div>
-
-        <div class="form-group">
-            <?= $this->formLabel($form->get('confirm_password')); ?>
-            <?= $this->formElement($form->get('confirm_password')); ?>
-            <?= $this->formElementErrors($form->get('confirm_password')); ?>
-        </div>
-
-        <div class="form-group">
-            <?= $this->formLabel($form->get('status')); ?>
-            <?= $this->formElement($form->get('status')); ?>
-            <?= $this->formElementErrors($form->get('status')); ?>
+            <?= $this->formLabel($form->get('surname')); ?>
+            <?= $this->formElement($form->get('surname')); ?>
+            <?= $this->formElementErrors($form->get('surname')); ?>
         </div>
 
         <?= $this->formElement($form->get('submit')); ?>

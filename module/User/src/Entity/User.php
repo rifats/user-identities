@@ -26,24 +26,24 @@ class User
     protected $id;
 
     /**
-     * @ORM\Column(name="username")
+     * @ORM\Column(name="username", type="string", length=50, nullable=false, unique=true)
      */
     protected $username;
 
     /**
-     * @ORM\Column(name="email")
+     * @ORM\Column(name="email", type="string", length=128, nullable=false, unique=true)
      */
     protected $email;
 
     /**
      * Encrypted password.
      *
-     * @ORM\Column(name="password")
+     * @ORM\Column(name="password", type="string", length=256, nullable=false, unique=true)
      */
     protected $password;
 
     /**
-     * @ORM\Column(name="status")
+     * @ORM\Column(name="status", type="integer", nullable=false)
      */
     protected $status;
 
@@ -185,5 +185,21 @@ class User
     public function setPasswordResetTokenCreationDate($date)
     {
         $this->passwordResetTokenCreationDate = $date;
+    }
+
+    /**
+     * @param mixed $identities
+     */
+    public function setIdentities($identities)
+    {
+        $this->identities = $identities;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getIdentities()
+    {
+        return $this->identities;
     }
 }

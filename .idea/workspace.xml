@@ -23,19 +23,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="view.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/User/view/user/user/view.phtml">
+      <file leaf-file-name="AuthAdapter.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/User/src/Service/AuthAdapter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="10" selection-start="1388" selection-end="1388" vertical-scroll-proportion="-16.258064" vertical-offset="530" max-vertical-offset="1342">
+            <state line="95" column="81" selection-start="2610" selection-end="2610" vertical-scroll-proportion="-13.387096" vertical-offset="1609" max-vertical-offset="2442">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Identity/view/identity/identity/add.phtml">
+      <file leaf-file-name="UserManager.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/User/src/Service/UserManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="13" selection-start="799" selection-end="799" vertical-scroll-proportion="-25.548388" vertical-offset="66" max-vertical-offset="1980">
+            <state line="254" column="44" selection-start="7344" selection-end="7344" vertical-scroll-proportion="-36.929825" vertical-offset="3439" max-vertical-offset="5830">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IdentityManager.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Identity/src/Service/IdentityManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="45" selection-start="891" selection-end="891" vertical-scroll-proportion="-9.83871" vertical-offset="509" max-vertical-offset="1628">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.phtml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module/User/view/user/user/view.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="4" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.36614645" vertical-offset="861" max-vertical-offset="2288">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/User/view/user/user/index.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="12" selection-start="615" selection-end="622" vertical-scroll-proportion="-8.419354" vertical-offset="355" max-vertical-offset="1518">
               <folding />
             </state>
           </provider>
@@ -44,58 +71,9 @@
       <file leaf-file-name="UserController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/User/src/Controller/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="521" selection-end="621" vertical-scroll-proportion="-11.354838" vertical-offset="132" max-vertical-offset="7612">
+            <state line="375" column="0" selection-start="10580" selection-end="10580" vertical-scroll-proportion="-146.90323" vertical-offset="3696" max-vertical-offset="8536">
               <folding>
                 <element signature="e#34#83#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IdentityControllerFactory.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Identity/src/Controller/Factory/IdentityControllerFactory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="21" selection-start="203" selection-end="218" vertical-scroll-proportion="-4.2580647" vertical-offset="0" max-vertical-offset="638">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IdentityManager.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/module/Identity/src/Service/IdentityManager.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="0" selection-start="1380" selection-end="1380" vertical-scroll-proportion="1.0528212" vertical-offset="399" max-vertical-offset="1430">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IdentityController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Identity/src/Controller/IdentityController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="48" selection-start="746" selection-end="746" vertical-scroll-proportion="-12.0" vertical-offset="244" max-vertical-offset="2002">
-              <folding>
-                <element signature="e#226#275#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/User/view/user/user/index.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="227" selection-end="419" vertical-scroll-proportion="-7.096774" vertical-offset="66" max-vertical-offset="1408">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="module.config.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Identity/config/module.config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="21" selection-start="344" selection-end="344" vertical-scroll-proportion="-3.483871" vertical-offset="134" max-vertical-offset="1342">
-              <folding>
-                <element signature="e#215#264#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,9 +82,40 @@
       <file leaf-file-name="module.config.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/User/config/module.config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="12" selection-start="1676" selection-end="2220" vertical-scroll-proportion="-12.0" vertical-offset="728" max-vertical-offset="2596">
+            <state line="50" column="13" selection-start="1677" selection-end="1682" vertical-scroll-proportion="-12.064516" vertical-offset="726" max-vertical-offset="2596">
               <folding>
                 <element signature="e#23#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/User/src/Entity/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="203" column="5" selection-start="3729" selection-end="3729" vertical-scroll-proportion="-21.903225" vertical-offset="3699" max-vertical-offset="4532">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IdentityForm.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Identity/src/Form/IdentityForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="135" column="14" selection-start="3346" selection-end="3346" vertical-scroll-proportion="-48.508774" vertical-offset="205" max-vertical-offset="3366">
+              <folding>
+                <element signature="e#33#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Identity.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Identity/src/Entity/Identity.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="109" selection-start="923" selection-end="923" vertical-scroll-proportion="-12.967742" vertical-offset="654" max-vertical-offset="3234">
+              <folding>
+                <element signature="e#7#192#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -140,37 +149,38 @@
         <option value="$PROJECT_DIR$/module/User/src/Service/Factory/AuthAdapterFactory.php" />
         <option value="$PROJECT_DIR$/module/User/src/Service/Factory/AuthManagerFactory.php" />
         <option value="$PROJECT_DIR$/module/User/src/Service/Factory/UserManagerFactory.php" />
-        <option value="$PROJECT_DIR$/module/User/src/Module.php" />
         <option value="$PROJECT_DIR$/module/User/src/Form/LoginForm.php" />
         <option value="$PROJECT_DIR$/module/User/src/Form/PasswordChangeForm.php" />
         <option value="$PROJECT_DIR$/module/User/src/Form/PasswordResetForm.php" />
         <option value="$PROJECT_DIR$/module/User/src/Validator/UserExistsValidator.php" />
-        <option value="$PROJECT_DIR$/module/User/config/module.config.php" />
         <option value="$PROJECT_DIR$/module/Identity/Entity/Identity.php" />
         <option value="$PROJECT_DIR$/module/User/view/user/user/change-password.phtml" />
         <option value="$PROJECT_DIR$/module/User/view/user/user/message.phtml" />
         <option value="$PROJECT_DIR$/module/User/view/user/user/reset-password.phtml" />
         <option value="$PROJECT_DIR$/module/User/view/user/user/set-password.phtml" />
         <option value="$PROJECT_DIR$/module/User/view/user/auth/login.phtml" />
-        <option value="$PROJECT_DIR$/module/User/src/Entity/User.php" />
-        <option value="$PROJECT_DIR$/module/User/view/user/user/index.phtml" />
-        <option value="$PROJECT_DIR$/module/User/src/Controller/UserController.php" />
-        <option value="$PROJECT_DIR$/module/User/src/Form/UserForm.php" />
         <option value="$PROJECT_DIR$/module/User/view/user/user/edit.phtml" />
         <option value="$PROJECT_DIR$/module/User/view/user/user/add.phtml" />
-        <option value="$PROJECT_DIR$/module/User/src/Service/UserManager.php" />
-        <option value="$PROJECT_DIR$/module/Identity/src/Entity/Identity.php" />
-        <option value="$PROJECT_DIR$/module/Identity/src/Form/IdentityForm.php" />
         <option value="$PROJECT_DIR$/config/autoload/global.php" />
         <option value="$PROJECT_DIR$/module/User/src/Service/AuthManager.php" />
-        <option value="$PROJECT_DIR$/module/User/src/Service/AuthAdapter.php" />
         <option value="$PROJECT_DIR$/module/User/src/Controller/AuthController.php" />
+        <option value="$PROJECT_DIR$/module/Identity/src/Service/Factory/IdentityManagerFactory.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Module.php" />
+        <option value="$PROJECT_DIR$/module/User/config/module.config.php" />
         <option value="$PROJECT_DIR$/module/Identity/config/module.config.php" />
-        <option value="$PROJECT_DIR$/module/User/view/user/user/view.phtml" />
         <option value="$PROJECT_DIR$/module/Identity/view/identity/identity/add.phtml" />
-        <option value="$PROJECT_DIR$/module/Identity/src/Controller/IdentityController.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Form/UserForm.php" />
+        <option value="$PROJECT_DIR$/module/Identity/src/Form/IdentityForm.php" />
         <option value="$PROJECT_DIR$/module/Identity/src/Controller/Factory/IdentityControllerFactory.php" />
+        <option value="$PROJECT_DIR$/module/Identity/src/Entity/Identity.php" />
+        <option value="$PROJECT_DIR$/module/Identity/src/Controller/IdentityController.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Service/AuthAdapter.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Controller/UserController.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Service/UserManager.php" />
         <option value="$PROJECT_DIR$/module/Identity/src/Service/IdentityManager.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Entity/User.php" />
+        <option value="$PROJECT_DIR$/module/User/view/user/user/index.phtml" />
+        <option value="$PROJECT_DIR$/module/User/view/user/user/view.phtml" />
       </list>
     </option>
   </component>
@@ -250,11 +260,297 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="module" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="User" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="User" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="User" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="User" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Validator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="User" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="User" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Factory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="User" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Form" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="User" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="User" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="User" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Factory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="User" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -273,6 +569,226 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Identity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="identity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="identity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Identity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Identity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Identity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Factory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Identity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Form" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Identity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Identity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Identity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Factory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Identity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -430,14 +946,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="1" width="1932" height="1046" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7022472" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20170757" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -469,13 +985,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/application.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.15846339" vertical-offset="132" max-vertical-offset="1518">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/development.config.php.dist">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="843">
@@ -497,7 +1006,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="7" selection-end="193" vertical-scroll-proportion="0.18487395" vertical-offset="0" max-vertical-offset="833">
           <folding>
-            <element signature="e#7#192#0" expanded="true" />
+            <element signature="e#7#192#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -555,7 +1064,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="68" selection-start="345" selection-end="355" vertical-scroll-proportion="-9.16129" vertical-offset="24" max-vertical-offset="1166">
           <folding>
-            <element signature="e#30#77#0" expanded="true" />
+            <element signature="e#30#77#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -564,7 +1073,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="35" selection-start="772" selection-end="772" vertical-scroll-proportion="-21.935484" vertical-offset="68" max-vertical-offset="946">
           <folding>
-            <element signature="e#30#77#0" expanded="true" />
+            <element signature="e#30#77#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -580,7 +1089,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="1" selection-start="1053" selection-end="1053" vertical-scroll-proportion="-20.580645" vertical-offset="0" max-vertical-offset="770">
           <folding>
-            <element signature="e#39#80#0" expanded="true" />
+            <element signature="e#39#80#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -589,7 +1098,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="161" selection-end="161" vertical-scroll-proportion="0.16256158" vertical-offset="0" max-vertical-offset="812">
           <folding>
-            <element signature="e#39#80#0" expanded="true" />
+            <element signature="e#39#80#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -598,26 +1107,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="0.07881773" vertical-offset="134" max-vertical-offset="946">
           <folding>
-            <element signature="e#39#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/User/src/Service/Factory/UserManagerFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="1" selection-start="643" selection-end="643" vertical-scroll-proportion="0.5689655" vertical-offset="0" max-vertical-offset="812">
-          <folding>
-            <element signature="e#39#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/User/src/Module.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="1" selection-start="3067" selection-end="3067" vertical-scroll-proportion="2.1128452" vertical-offset="0" max-vertical-offset="1892">
-          <folding>
-            <element signature="e#7#192#0" expanded="true" />
-            <element signature="e#211#233#0" expanded="true" />
+            <element signature="e#39#80#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -660,7 +1150,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="149" column="10" selection-start="3698" selection-end="3698" vertical-scroll-proportion="2.0336134" vertical-offset="1584" max-vertical-offset="3850">
           <folding>
-            <element signature="e#28#47#0" expanded="true" />
+            <element signature="e#28#47#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -669,7 +1159,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="-3.0408163" vertical-offset="2665" max-vertical-offset="3498">
           <folding>
-            <element signature="e#28#47#0" expanded="true" />
+            <element signature="e#28#47#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -678,50 +1168,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="82" selection-end="82" vertical-scroll-proportion="-1.9843937" vertical-offset="1763" max-vertical-offset="2596">
           <folding>
-            <element signature="e#28#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/User/src/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="33" selection-start="501" selection-end="501" vertical-scroll-proportion="-13.4838705" vertical-offset="198" max-vertical-offset="4268">
-          <folding>
-            <element signature="e#7#191#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/User/src/Validator/UserExistsValidator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="93" selection-end="93" vertical-scroll-proportion="-3.548387" vertical-offset="0" max-vertical-offset="1980">
-          <folding>
-            <element signature="e#33#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/User/src/Form/UserForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="197" column="0" selection-start="5288" selection-end="5288" vertical-scroll-proportion="-1.3225807" vertical-offset="4293" max-vertical-offset="5126">
-          <folding>
-            <element signature="e#28#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/User/view/user/user/edit.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="13" selection-start="1550" selection-end="1550" vertical-scroll-proportion="-18.35484" vertical-offset="663" max-vertical-offset="1496">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Identity/src/Entity/Identity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="7" selection-start="2281" selection-end="2281" vertical-scroll-proportion="-18.35484" vertical-offset="2401" max-vertical-offset="3234">
-          <folding>
-            <element signature="e#7#192#0" expanded="true" />
+            <element signature="e#28#47#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -737,27 +1184,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="59" selection-start="952" selection-end="952" vertical-scroll-proportion="0.43103448" vertical-offset="310" max-vertical-offset="1188">
           <folding>
-            <element signature="e#6#400#0" expanded="true" />
-            <element signature="e#402#447#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/User/src/Controller/Factory/AuthControllerFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="39" selection-start="415" selection-end="415" vertical-scroll-proportion="0.35221675" vertical-offset="0" max-vertical-offset="812">
-          <folding>
-            <element signature="e#42#83#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Identity/src/Form/IdentityForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="45" selection-start="1859" selection-end="1859" vertical-scroll-proportion="-11.967742" vertical-offset="1323" max-vertical-offset="2156">
-          <folding>
-            <element signature="e#7#192#0" expanded="true" />
-            <element signature="e#223#242#0" expanded="true" />
+            <element signature="e#6#400#0" expanded="false" />
+            <element signature="e#402#447#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -769,95 +1197,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/User/src/Service/AuthManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="53" selection-start="1602" selection-end="1602" vertical-scroll-proportion="-13.193548" vertical-offset="823" max-vertical-offset="2992">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/User/src/Service/AuthAdapter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="21" selection-start="2615" selection-end="2615" vertical-scroll-proportion="-18.35484" vertical-offset="1587" max-vertical-offset="2508">
-          <folding>
-            <element signature="e#31#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/User/src/Controller/AuthController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="45" selection-start="3323" selection-end="3323" vertical-scroll-proportion="-12.67742" vertical-offset="1983" max-vertical-offset="3256">
-          <folding>
-            <element signature="e#35#84#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/User/view/user/user/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="227" selection-end="419" vertical-scroll-proportion="-7.096774" vertical-offset="66" max-vertical-offset="1408">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/User/config/module.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="12" selection-start="1676" selection-end="2220" vertical-scroll-proportion="-12.0" vertical-offset="728" max-vertical-offset="2596">
-          <folding>
-            <element signature="e#23#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Identity/config/module.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="21" selection-start="344" selection-end="344" vertical-scroll-proportion="-3.483871" vertical-offset="134" max-vertical-offset="1342">
-          <folding>
-            <element signature="e#215#264#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/User/view/user/user/view.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="10" selection-start="1388" selection-end="1388" vertical-scroll-proportion="-16.258064" vertical-offset="530" max-vertical-offset="1342">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/User/view/user/user/add.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="2318" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1958">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Identity/view/identity/identity/add.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="13" selection-start="799" selection-end="799" vertical-scroll-proportion="-25.548388" vertical-offset="66" max-vertical-offset="1980">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/User/src/Controller/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="521" selection-end="621" vertical-scroll-proportion="-11.354838" vertical-offset="132" max-vertical-offset="7612">
-          <folding>
-            <element signature="e#34#83#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Identity/src/Controller/IdentityController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="48" selection-start="746" selection-end="746" vertical-scroll-proportion="-12.0" vertical-offset="244" max-vertical-offset="2002">
-          <folding>
-            <element signature="e#226#275#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/User/src/Controller/Factory/UserControllerFactory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="170" selection-end="199" vertical-scroll-proportion="0.16256158" vertical-offset="0" max-vertical-offset="812">
@@ -865,25 +1204,201 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Service/Factory/UserManagerFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="1" selection-start="0" selection-end="643" vertical-scroll-proportion="0.5418719" vertical-offset="0" max-vertical-offset="812">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="16" selection-start="200" selection-end="200" vertical-scroll-proportion="0.29802954" vertical-offset="0" max-vertical-offset="1848">
+          <folding>
+            <element signature="e#24#46#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Identity/src/Service/Factory/IdentityManagerFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="80" selection-start="362" selection-end="362" vertical-scroll-proportion="-7.096774" vertical-offset="0" max-vertical-offset="638">
+          <folding>
+            <element signature="e#43#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Identity/config/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="18.516129" vertical-offset="574" max-vertical-offset="1386">
+          <folding>
+            <element signature="e#28#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Identity/view/identity/identity/add.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="21" selection-start="284" selection-end="284" vertical-scroll-proportion="-9.225806" vertical-offset="0" max-vertical-offset="1562">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/view/user/user/add.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="471" selection-end="471" vertical-scroll-proportion="-8.451612" vertical-offset="222" max-vertical-offset="1958">
+          <folding>
+            <marker date="1498303174866" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1498303174866" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1498303174866" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1498303174866" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1498303174866" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1498303174866" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1498303174866" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1498303174866" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/view/user/user/edit.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="13" selection-start="1550" selection-end="1550" vertical-scroll-proportion="-39.741936" vertical-offset="0" max-vertical-offset="1496">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Validator/UserExistsValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="4" selection-start="37" selection-end="37" vertical-scroll-proportion="-2.1290324" vertical-offset="0" max-vertical-offset="1980">
+          <folding>
+            <element signature="e#33#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Form/UserForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="32" selection-start="801" selection-end="858" vertical-scroll-proportion="-16.935484" vertical-offset="267" max-vertical-offset="5126">
+          <folding>
+            <element signature="e#28#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Controller/Factory/AuthControllerFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="4" selection-start="46" selection-end="46" vertical-scroll-proportion="0.079231694" vertical-offset="0" max-vertical-offset="833">
+          <folding>
+            <element signature="e#42#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/module/Identity/src/Controller/Factory/IdentityControllerFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="21" selection-start="203" selection-end="218" vertical-scroll-proportion="-4.2580647" vertical-offset="0" max-vertical-offset="638">
+        <state line="24" column="1" selection-start="919" selection-end="919" vertical-scroll-proportion="-14.903226" vertical-offset="0" max-vertical-offset="594">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Identity/src/Controller/IdentityController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="0" selection-start="1622" selection-end="1622" vertical-scroll-proportion="-10.645162" vertical-offset="1188" max-vertical-offset="2838">
+          <folding>
+            <element signature="e#39#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Service/AuthManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="53" selection-start="1602" selection-end="1602" vertical-scroll-proportion="-25.451612" vertical-offset="443" max-vertical-offset="2992">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Service/AuthAdapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="81" selection-start="2610" selection-end="2610" vertical-scroll-proportion="-13.387096" vertical-offset="1609" max-vertical-offset="2442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Identity/src/Entity/Identity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="109" selection-start="923" selection-end="923" vertical-scroll-proportion="-12.967742" vertical-offset="654" max-vertical-offset="3234">
+          <folding>
+            <element signature="e#7#192#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Identity/src/Form/IdentityForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="135" column="14" selection-start="3346" selection-end="3346" vertical-scroll-proportion="-48.508774" vertical-offset="205" max-vertical-offset="3366">
+          <folding>
+            <element signature="e#33#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/config/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="13" selection-start="1677" selection-end="1682" vertical-scroll-proportion="-12.064516" vertical-offset="726" max-vertical-offset="2596">
+          <folding>
+            <element signature="e#23#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Controller/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="0" selection-start="1009" selection-end="1051" vertical-scroll-proportion="-1.667467" vertical-offset="2313" max-vertical-offset="3146">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Identity/src/Service/IdentityManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="45" selection-start="891" selection-end="891" vertical-scroll-proportion="-9.83871" vertical-offset="509" max-vertical-offset="1628">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/User/src/Service/UserManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="26" selection-start="0" selection-end="7073" vertical-scroll-proportion="1.2463055" vertical-offset="0" max-vertical-offset="5434">
+        <state line="254" column="44" selection-start="7344" selection-end="7344" vertical-scroll-proportion="-36.929825" vertical-offset="3439" max-vertical-offset="5830">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="203" column="5" selection-start="3729" selection-end="3729" vertical-scroll-proportion="-21.903225" vertical-offset="3699" max-vertical-offset="4532">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="375" column="0" selection-start="10580" selection-end="10580" vertical-scroll-proportion="-146.90323" vertical-offset="3696" max-vertical-offset="8536">
           <folding>
-            <element signature="e#31#52#0" expanded="true" />
+            <element signature="e#34#83#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Identity/src/Service/IdentityManager.php">
+    <entry file="file://$PROJECT_DIR$/module/User/view/user/user/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="1380" selection-end="1380" vertical-scroll-proportion="1.0528212" vertical-offset="399" max-vertical-offset="1430">
+        <state line="28" column="12" selection-start="615" selection-end="622" vertical-scroll-proportion="-8.419354" vertical-offset="355" max-vertical-offset="1518">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/view/user/user/view.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="4" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.36614645" vertical-offset="861" max-vertical-offset="2288">
           <folding />
         </state>
       </provider>
