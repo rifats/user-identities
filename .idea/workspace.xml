@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="77c66cba-3ca5-4d6b-bb78-4f3b6504bb52" name="Default" comment="" />
+    <ignored path="helloworld.dev.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="helloworld.dev" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="view.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/User/view/user/user/view.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="10" selection-start="1388" selection-end="1388" vertical-scroll-proportion="-16.258064" vertical-offset="530" max-vertical-offset="1342">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Identity/view/identity/identity/add.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="13" selection-start="799" selection-end="799" vertical-scroll-proportion="-25.548388" vertical-offset="66" max-vertical-offset="1980">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/User/src/Controller/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="0" selection-start="521" selection-end="621" vertical-scroll-proportion="-11.354838" vertical-offset="132" max-vertical-offset="7612">
+              <folding>
+                <element signature="e#34#83#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IdentityControllerFactory.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Identity/src/Controller/Factory/IdentityControllerFactory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="21" selection-start="203" selection-end="218" vertical-scroll-proportion="-4.2580647" vertical-offset="0" max-vertical-offset="638">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IdentityManager.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module/Identity/src/Service/IdentityManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="58" column="0" selection-start="1380" selection-end="1380" vertical-scroll-proportion="1.0528212" vertical-offset="399" max-vertical-offset="1430">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IdentityController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Identity/src/Controller/IdentityController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="48" selection-start="746" selection-end="746" vertical-scroll-proportion="-12.0" vertical-offset="244" max-vertical-offset="2002">
+              <folding>
+                <element signature="e#226#275#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/User/view/user/user/index.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="227" selection-end="419" vertical-scroll-proportion="-7.096774" vertical-offset="66" max-vertical-offset="1408">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="module.config.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Identity/config/module.config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="21" selection-start="344" selection-end="344" vertical-scroll-proportion="-3.483871" vertical-offset="134" max-vertical-offset="1342">
+              <folding>
+                <element signature="e#215#264#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="module.config.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/User/config/module.config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="12" selection-start="1676" selection-end="2220" vertical-scroll-proportion="-12.0" vertical-offset="728" max-vertical-offset="2596">
+              <folding>
+                <element signature="e#23#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/module/Identity/src/Module.php" />
+        <option value="$PROJECT_DIR$/module/Security/Entity/User.php" />
+        <option value="$PROJECT_DIR$/module/Security/config/module.config.php" />
+        <option value="$PROJECT_DIR$/config/modules.config.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/data/Migrations/Version20170623224807.php" />
+        <option value="$PROJECT_DIR$/data/Migrations/Version20170623230800.php" />
+        <option value="$PROJECT_DIR$/module/Identity/view/identity/identity/edit.phtml" />
+        <option value="$PROJECT_DIR$/module/Identity/Form/IdentityForm.php" />
+        <option value="$PROJECT_DIR$/data/Migrations/Version20170623232450.php" />
+        <option value="$PROJECT_DIR$/data/Migrations/Version20170624000558.php" />
+        <option value="$PROJECT_DIR$/module/User/Entity/User.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Controller/Factory/UserControllerFactory.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Service/Factory/AuthenticationServiceFactory.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Controller/Factory/AuthControllerFactory.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Service/Factory/AuthAdapterFactory.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Service/Factory/AuthManagerFactory.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Service/Factory/UserManagerFactory.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Module.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Form/LoginForm.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Form/PasswordChangeForm.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Form/PasswordResetForm.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Validator/UserExistsValidator.php" />
+        <option value="$PROJECT_DIR$/module/User/config/module.config.php" />
+        <option value="$PROJECT_DIR$/module/Identity/Entity/Identity.php" />
+        <option value="$PROJECT_DIR$/module/User/view/user/user/change-password.phtml" />
+        <option value="$PROJECT_DIR$/module/User/view/user/user/message.phtml" />
+        <option value="$PROJECT_DIR$/module/User/view/user/user/reset-password.phtml" />
+        <option value="$PROJECT_DIR$/module/User/view/user/user/set-password.phtml" />
+        <option value="$PROJECT_DIR$/module/User/view/user/auth/login.phtml" />
+        <option value="$PROJECT_DIR$/module/User/src/Entity/User.php" />
+        <option value="$PROJECT_DIR$/module/User/view/user/user/index.phtml" />
+        <option value="$PROJECT_DIR$/module/User/src/Controller/UserController.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Form/UserForm.php" />
+        <option value="$PROJECT_DIR$/module/User/view/user/user/edit.phtml" />
+        <option value="$PROJECT_DIR$/module/User/view/user/user/add.phtml" />
+        <option value="$PROJECT_DIR$/module/User/src/Service/UserManager.php" />
+        <option value="$PROJECT_DIR$/module/Identity/src/Entity/Identity.php" />
+        <option value="$PROJECT_DIR$/module/Identity/src/Form/IdentityForm.php" />
+        <option value="$PROJECT_DIR$/config/autoload/global.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Service/AuthManager.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Service/AuthAdapter.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Controller/AuthController.php" />
+        <option value="$PROJECT_DIR$/module/Identity/config/module.config.php" />
+        <option value="$PROJECT_DIR$/module/User/view/user/user/view.phtml" />
+        <option value="$PROJECT_DIR$/module/Identity/view/identity/identity/add.phtml" />
+        <option value="$PROJECT_DIR$/module/Identity/src/Controller/IdentityController.php" />
+        <option value="$PROJECT_DIR$/module/Identity/src/Controller/Factory/IdentityControllerFactory.php" />
+        <option value="$PROJECT_DIR$/module/Identity/src/Service/IdentityManager.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="y" value="1" />
+    <option name="width" value="1932" />
+    <option name="height" value="1046" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="User" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Identity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Migrations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autoload" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../interkino.dev" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OpenServer\domains\helloworld.dev\module\User\src" />
+      <recent name="D:\OpenServer\domains\helloworld.dev\module\Identity\src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="77c66cba-3ca5-4d6b-bb78-4f3b6504bb52" name="Default" comment="" />
+      <created>1498247855185</created>
+      <updated>1498247855185</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="1" width="1932" height="1046" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/config/application.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.15846339" vertical-offset="132" max-vertical-offset="1518">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/development.config.php.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="843">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/autoload/local.php.dist">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="839">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/autoload/local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="7" selection-end="193" vertical-scroll-proportion="0.18487395" vertical-offset="0" max-vertical-offset="833">
+          <folding>
+            <element signature="e#7#192#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Identity/src/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="5" selection-start="430" selection-end="430" vertical-scroll-proportion="-9.225806" vertical-offset="0" max-vertical-offset="440">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/config/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="334" selection-end="363" vertical-scroll-proportion="0.16256158" vertical-offset="0" max-vertical-offset="2178">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/modules.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="25" selection-start="653" selection-end="653" vertical-scroll-proportion="-12.064516" vertical-offset="0" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Identity/view/identity/identity/edit.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="4" selection-start="595" selection-end="595" vertical-scroll-proportion="0.48768473" vertical-offset="0" max-vertical-offset="812">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Migrations/Version20170623230800.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="27" selection-start="637" selection-end="647" vertical-scroll-proportion="-12.709678" vertical-offset="156" max-vertical-offset="1034">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="9" selection-start="896" selection-end="915" vertical-scroll-proportion="-9.263158" vertical-offset="0" max-vertical-offset="1342">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/Schema.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="6" selection-start="2628" selection-end="2628" vertical-scroll-proportion="13.4838705" vertical-offset="1188" max-vertical-offset="10912">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Migrations/Version20170623224807.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="68" selection-start="345" selection-end="355" vertical-scroll-proportion="-9.16129" vertical-offset="24" max-vertical-offset="1166">
+          <folding>
+            <element signature="e#30#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Migrations/Version20170623232450.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="35" selection-start="772" selection-end="772" vertical-scroll-proportion="-21.935484" vertical-offset="68" max-vertical-offset="946">
+          <folding>
+            <element signature="e#30#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Migrations/Version20170624000558.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="43" selection-start="1131" selection-end="1131" vertical-scroll-proportion="-26.967741" vertical-offset="0" max-vertical-offset="1034">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Service/Factory/AuthenticationServiceFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="1" selection-start="1053" selection-end="1053" vertical-scroll-proportion="-20.580645" vertical-offset="0" max-vertical-offset="770">
+          <folding>
+            <element signature="e#39#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Service/Factory/AuthAdapterFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="161" selection-end="161" vertical-scroll-proportion="0.16256158" vertical-offset="0" max-vertical-offset="812">
+          <folding>
+            <element signature="e#39#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Service/Factory/AuthManagerFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="0.07881773" vertical-offset="134" max-vertical-offset="946">
+          <folding>
+            <element signature="e#39#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Service/Factory/UserManagerFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="1" selection-start="643" selection-end="643" vertical-scroll-proportion="0.5689655" vertical-offset="0" max-vertical-offset="812">
+          <folding>
+            <element signature="e#39#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="1" selection-start="3067" selection-end="3067" vertical-scroll-proportion="2.1128452" vertical-offset="0" max-vertical-offset="1892">
+          <folding>
+            <element signature="e#7#192#0" expanded="true" />
+            <element signature="e#211#233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/view/user/user/change-password.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="733" selection-end="733" vertical-scroll-proportion="-9.129032" vertical-offset="311" max-vertical-offset="1474">
+          <folding>
+            <marker date="1498299617882" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1498299617882" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1498299617882" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1498299617882" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1498299617882" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/view/user/user/message.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="6" selection-start="927" selection-end="927" vertical-scroll-proportion="-21.290323" vertical-offset="0" max-vertical-offset="792">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/view/user/user/set-password.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="0" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.84153664" vertical-offset="267" max-vertical-offset="1100">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/view/user/user/reset-password.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="6" selection-start="887" selection-end="887" vertical-scroll-proportion="-24.838709" vertical-offset="0" max-vertical-offset="902">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Form/LoginForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="10" selection-start="3698" selection-end="3698" vertical-scroll-proportion="2.0336134" vertical-offset="1584" max-vertical-offset="3850">
+          <folding>
+            <element signature="e#28#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Form/PasswordChangeForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="-3.0408163" vertical-offset="2665" max-vertical-offset="3498">
+          <folding>
+            <element signature="e#28#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Form/PasswordResetForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="82" selection-end="82" vertical-scroll-proportion="-1.9843937" vertical-offset="1763" max-vertical-offset="2596">
+          <folding>
+            <element signature="e#28#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="33" selection-start="501" selection-end="501" vertical-scroll-proportion="-13.4838705" vertical-offset="198" max-vertical-offset="4268">
+          <folding>
+            <element signature="e#7#191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Validator/UserExistsValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="93" selection-end="93" vertical-scroll-proportion="-3.548387" vertical-offset="0" max-vertical-offset="1980">
+          <folding>
+            <element signature="e#33#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Form/UserForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="197" column="0" selection-start="5288" selection-end="5288" vertical-scroll-proportion="-1.3225807" vertical-offset="4293" max-vertical-offset="5126">
+          <folding>
+            <element signature="e#28#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/view/user/user/edit.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="13" selection-start="1550" selection-end="1550" vertical-scroll-proportion="-18.35484" vertical-offset="663" max-vertical-offset="1496">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Identity/src/Entity/Identity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="135" column="7" selection-start="2281" selection-end="2281" vertical-scroll-proportion="-18.35484" vertical-offset="2401" max-vertical-offset="3234">
+          <folding>
+            <element signature="e#7#192#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/view/user/auth/login.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="1216" selection-end="1216" vertical-scroll-proportion="0.7202881" vertical-offset="258" max-vertical-offset="1122">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/autoload/global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="59" selection-start="952" selection-end="952" vertical-scroll-proportion="0.43103448" vertical-offset="310" max-vertical-offset="1188">
+          <folding>
+            <element signature="e#6#400#0" expanded="true" />
+            <element signature="e#402#447#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Controller/Factory/AuthControllerFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="39" selection-start="415" selection-end="415" vertical-scroll-proportion="0.35221675" vertical-offset="0" max-vertical-offset="812">
+          <folding>
+            <element signature="e#42#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Identity/src/Form/IdentityForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="45" selection-start="1859" selection-end="1859" vertical-scroll-proportion="-11.967742" vertical-offset="1323" max-vertical-offset="2156">
+          <folding>
+            <element signature="e#7#192#0" expanded="true" />
+            <element signature="e#223#242#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/zendframework/zend-authentication/src/AuthenticationService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="6" selection-start="348" selection-end="348" vertical-scroll-proportion="0.054187194" vertical-offset="66" max-vertical-offset="3564">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Service/AuthManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="53" selection-start="1602" selection-end="1602" vertical-scroll-proportion="-13.193548" vertical-offset="823" max-vertical-offset="2992">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Service/AuthAdapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="21" selection-start="2615" selection-end="2615" vertical-scroll-proportion="-18.35484" vertical-offset="1587" max-vertical-offset="2508">
+          <folding>
+            <element signature="e#31#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Controller/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="45" selection-start="3323" selection-end="3323" vertical-scroll-proportion="-12.67742" vertical-offset="1983" max-vertical-offset="3256">
+          <folding>
+            <element signature="e#35#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/view/user/user/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="227" selection-end="419" vertical-scroll-proportion="-7.096774" vertical-offset="66" max-vertical-offset="1408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/config/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="12" selection-start="1676" selection-end="2220" vertical-scroll-proportion="-12.0" vertical-offset="728" max-vertical-offset="2596">
+          <folding>
+            <element signature="e#23#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Identity/config/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="21" selection-start="344" selection-end="344" vertical-scroll-proportion="-3.483871" vertical-offset="134" max-vertical-offset="1342">
+          <folding>
+            <element signature="e#215#264#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/view/user/user/view.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="10" selection-start="1388" selection-end="1388" vertical-scroll-proportion="-16.258064" vertical-offset="530" max-vertical-offset="1342">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/view/user/user/add.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="2318" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1958">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Identity/view/identity/identity/add.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="13" selection-start="799" selection-end="799" vertical-scroll-proportion="-25.548388" vertical-offset="66" max-vertical-offset="1980">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="521" selection-end="621" vertical-scroll-proportion="-11.354838" vertical-offset="132" max-vertical-offset="7612">
+          <folding>
+            <element signature="e#34#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Identity/src/Controller/IdentityController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="48" selection-start="746" selection-end="746" vertical-scroll-proportion="-12.0" vertical-offset="244" max-vertical-offset="2002">
+          <folding>
+            <element signature="e#226#275#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Controller/Factory/UserControllerFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="170" selection-end="199" vertical-scroll-proportion="0.16256158" vertical-offset="0" max-vertical-offset="812">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Identity/src/Controller/Factory/IdentityControllerFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="21" selection-start="203" selection-end="218" vertical-scroll-proportion="-4.2580647" vertical-offset="0" max-vertical-offset="638">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Service/UserManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="26" selection-start="0" selection-end="7073" vertical-scroll-proportion="1.2463055" vertical-offset="0" max-vertical-offset="5434">
+          <folding>
+            <element signature="e#31#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Identity/src/Service/IdentityManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="0" selection-start="1380" selection-end="1380" vertical-scroll-proportion="1.0528212" vertical-offset="399" max-vertical-offset="1430">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

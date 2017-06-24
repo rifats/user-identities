@@ -1,0 +1,29 @@
+<?php
+
+$title = 'My identities';
+$this->headTitle($title);
+?>
+<h1><?= $this->escapeHtml($title) ?></h1>
+<p>
+    <a href="<?= $this->url('identity', ['action' => 'add']) ?>">Add new identity</a>
+</p>
+
+<table class="table">
+<tr>
+    <th>Тип</th>
+    <th>Имя</th>
+    <th>Фамилия</th>
+    <th>&nbsp;</th>
+</tr>
+<?php foreach ($identities as $identity) : ?>
+    <tr>
+        <td><?= $this->escapeHtml($identity->identtype) ?></td>
+        <td><?= $this->escapeHtml($identity->name) ?></td>
+        <td><?= $this->escapeHtml($identity->surname) ?></td>
+        <td>
+            <a href="<?= $this->url('$identity', ['action' => 'edit', 'id' => $album->id]) ?>">Edit</a>
+            <a href="<?= $this->url('$identity', ['action' => 'delete', 'id' => $album->id]) ?>">Delete</a>
+        </td>
+    </tr>
+<?php endforeach; ?>
+</table>
