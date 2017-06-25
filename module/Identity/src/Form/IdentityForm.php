@@ -62,7 +62,7 @@ class IdentityForm extends Form
                     'id' => 'identityType'
                 ],
                 'options' => [
-                    'label' => 'Identity type',
+                    'label' => 'Identity type / Тип документа *',
                     'value_options' => [
                         1 => 'Passport / Паспорт',
                         2 => 'Foreign passport / Загранпаспорт',
@@ -80,7 +80,7 @@ class IdentityForm extends Form
               'id' => 'name'  
             ],
             'options' => [
-                'label' => 'Name / Имя',
+                'label' => 'Name / Имя *',
             ],
         ]);
         
@@ -92,7 +92,7 @@ class IdentityForm extends Form
                 'id' => 'surname'
             ],
             'options' => [
-                'label' => 'Surname / Фамилия',
+                'label' => 'Surname / Фамилия *',
             ],
         ]);
 
@@ -116,7 +116,7 @@ class IdentityForm extends Form
                 'id' => 'identityId'
             ],
             'options' => [
-                'label' => 'Identity ID / Номер',
+                'label' => 'Identity ID / Номер *',
             ],
         ]);
 
@@ -140,7 +140,7 @@ class IdentityForm extends Form
                 'id' => 'dateOfIssue'
             ],
             'options' => [
-                'label' => 'Date of issue / Дата выдачи',
+                'label' => 'Date of issue / Дата выдачи *',
             ],
         ]);
 
@@ -176,7 +176,7 @@ class IdentityForm extends Form
                 'id' => 'isValid'
             ],
             'options' => [
-                'label' => 'Is valid / Действителен',
+                'label' => 'Is valid / Действителен *',
                 'value_options' => [
                     1 => 'Valid / Действителен',
                     0 => 'Not valid / Не действителен',
@@ -232,6 +232,129 @@ class IdentityForm extends Form
                         'max' => 40
                     ],
                 ],
+            ],
+        ]);
+
+        // Add input for "range" field
+        $inputFilter->add([
+            'name'     => 'range',
+            'required' => false,
+            'filters'  => [
+                ['name' => 'ToInt'],
+            ],
+            'validators' => [
+
+            ],
+        ]);
+
+        // Add input for "identityId" field
+        $inputFilter->add([
+            'name'     => 'identityId',
+            'required' => true,
+            'filters'  => [
+                ['name' => 'StringTrim'],
+                ['name' => 'StripTags'],
+            ],
+            'validators' => [
+                [
+                    'name' => 'Regex',
+                    'options' => [
+                        'pattern' => '/^[0-9a-zA-Z\-]+$/',
+                        'messages' => array(
+                            \Zend\Validator\Regex::INVALID => "Invalid characters in identity ID"
+                        )
+                    ],
+                ],
+                [
+                    'name'    => 'StringLength',
+                    'options' => [
+                        'min' => 1,
+                        'max' => 50
+                    ],
+                ],
+            ],
+        ]);
+
+        // Add input for "description" field
+        $inputFilter->add([
+            'name'     => 'description',
+            'required' => false,
+            'filters'  => [
+                ['name' => 'StringTrim'],
+            ],
+            'validators' => [
+
+            ],
+        ]);
+
+        // Add input for "dateOfIssue" field
+        $inputFilter->add([
+            'name'     => 'dateOfIssue',
+            'required' => true,
+            'filters'  => [
+                //['name' => 'StringTrim'],
+            ],
+            'validators' => [
+                [
+                    'name' => 'Date',
+                    'options' => [
+                        'format' => 'Y-m-d',
+                        'locale' => 'ru',
+                    ],
+                ],
+            ],
+        ]);
+
+        // Add input for "dateOfExpire" field
+        $inputFilter->add([
+            'name'     => 'dateOfExpire',
+            'required' => false,
+            'filters'  => [
+                //['name' => 'StringTrim'],
+            ],
+            'validators' => [
+                [
+                    'name' => 'Date',
+                    'options' => [
+                        'format' => 'Y-m-d',
+                        'locale' => 'ru',
+                    ],
+                ],
+            ],
+        ]);
+
+        // Add input for "authority" field
+        $inputFilter->add([
+            'name'     => 'authority',
+            'required' => false,
+            'filters'  => [
+                ['name' => 'StringTrim'],
+                ['name' => 'StripTags'],
+            ],
+            'validators' => [
+                [
+                    'name'    => 'StringLength',
+                    'options' => [
+                        'min' => 5,
+                        'max' => 250
+                    ],
+                ],
+            ],
+        ]);
+
+        // Add input for "isValid" field
+        $inputFilter->add([
+            'name'     => 'isValid',
+            'required' => true,
+            'filters'  => [
+            //    ['name' => 'ToBoolean'], // A plugin by the name "ToBoolean" was not found
+                                           // in the plugin manager Zend\Filter\FilterPluginManager
+            ],
+            'validators' => [
+                [
+                    'name'=>'InArray',
+                    'options'=>['haystack'=>[0, 1]]
+                ]
             ],
         ]);
     }

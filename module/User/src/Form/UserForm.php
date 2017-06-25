@@ -146,7 +146,7 @@ class UserForm extends Form
                     'name' => 'EmailAddress',
                     'options' => [
                         'allow' => \Zend\Validator\Hostname::ALLOW_DNS,
-                        'useMxCheck'    => false,
+                        'useMxCheck' => false,
                     ],
                 ],
                 [

@@ -21,11 +21,40 @@ $form->get('surname')->setAttributes([
     'placeholder'=>'Doe'
 ]);
 
-/*
-$form->get('status')->setAttributes([
-    'class'=>'form-control'
+$form->get('range')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>'1234'
 ]);
-*/
+
+$form->get('identityId')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>'9876-V567'
+]);
+
+$form->get('description')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>''
+]);
+
+$form->get('dateOfIssue')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>''
+]);
+
+$form->get('dateOfExpire')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>''
+]);
+
+$form->get('authority')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>''
+]);
+
+$form->get('isValid')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>''
+]);
 
 $form->get('submit')
     ->setAttributes(['class'=>'btn btn-primary'])
@@ -51,6 +80,48 @@ $form->prepare();
             <?= $this->formLabel($form->get('surname')); ?>
             <?= $this->formElement($form->get('surname')); ?>
             <?= $this->formElementErrors($form->get('surname')); ?>
+        </div>
+
+        <div class="form-group">
+            <?= $this->formLabel($form->get('range')); ?>
+            <?= $this->formElement($form->get('range')); ?>
+            <?= $this->formElementErrors($form->get('range')); ?>
+        </div>
+
+        <div class="form-group">
+            <?= $this->formLabel($form->get('identityId')); ?>
+            <?= $this->formElement($form->get('identityId')); ?>
+            <?= $this->formElementErrors($form->get('identityId')); ?>
+        </div>
+
+        <div class="form-group">
+            <?= $this->formLabel($form->get('description')); ?>
+            <?= $this->formElement($form->get('description')); ?>
+            <?= $this->formElementErrors($form->get('description')); ?>
+        </div>
+
+        <div class="form-group">
+            <?= $this->formLabel($form->get('dateOfIssue')); ?>
+            <?= $this->formElement($form->get('dateOfIssue')); ?>
+            <?= $this->formElementErrors($form->get('dateOfIssue')); ?>
+        </div>
+
+        <div class="form-group">
+            <?= $this->formLabel($form->get('dateOfExpire')); ?>
+            <?= $this->formElement($form->get('dateOfExpire')); ?>
+            <?= $this->formElementErrors($form->get('dateOfExpire')); ?>
+        </div>
+
+        <div class="form-group">
+            <?= $this->formLabel($form->get('authority')); ?>
+            <?= $this->formElement($form->get('authority')); ?>
+            <?= $this->formElementErrors($form->get('authority')); ?>
+        </div>
+
+        <div class="form-group">
+            <?= $this->formLabel($form->get('isValid')); ?>
+            <?= $this->formElement($form->get('isValid')); ?>
+            <?= $this->formElementErrors($form->get('isValid')); ?>
         </div>
 
         <?= $this->formElement($form->get('submit')); ?>

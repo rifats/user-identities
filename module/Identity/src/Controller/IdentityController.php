@@ -168,8 +168,15 @@ class IdentityController extends AbstractActionController
             }
         } else {
             $form->setData(array(
-                'name'      =>  $identity->getName(),
-                'surname'   =>  $identity->getSurname(),
+                'name'          =>  $identity->getName(),
+                'surname'       =>  $identity->getSurname(),
+                'range'         =>  $identity->getRange(),
+                'identityId'    =>  $identity->getIdentityId(),
+                'description'   =>  $identity->getDescription(),
+                'dateOfIssue'   =>  $identity->getDateOfIssue(),
+                'dateOfExpire'  =>  $identity->getDateOfExpire(),
+                'authority'     =>  $identity->getAuthority(),
+                'isValid'       =>  $identity->getIsValid(),
             ));
         }
 

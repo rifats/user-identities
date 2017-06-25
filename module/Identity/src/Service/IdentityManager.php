@@ -100,9 +100,13 @@ class IdentityManager
 
         $identity->setName($data['name']);
         $identity->setSurname($data['surname']);
-        #$identity->setStatus($data['status']);
-
-        // Добавить другие поля
+        $identity->setRange( $data['range'] ? (int)$data['range'] : null );
+        $identity->setIdentityId($data['identityId']);
+        $identity->setDescription($data['description']);
+        $identity->setDateOfIssue(new \DateTime($data['dateOfIssue']));
+        $identity->setDateOfExpire(new \DateTime($data['dateOfExpire']));
+        $identity->setAuthority($data['authority']);
+        $identity->setIsValid($data['isValid']);
 
         // Apply changes to database.
         $this->entityManager->flush();
