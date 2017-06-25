@@ -25,7 +25,12 @@ class IdentityManager
     }
 
     /**
-     * This method adds a new identity.
+     * @param $data
+     * @param null $authorizedUser
+     * @return Identity
+     * @throws \Exception
+     *
+     * Adds a new identity.
      */
     public function addIdentity($data, $authorizedUser=null)
     {
@@ -64,6 +69,21 @@ class IdentityManager
         return $identity;
     }
 
+    /**
+     * @param $identity
+     * @return bool
+     *
+     * Deletes identity data with identities from DB.
+     */
+    public function deleteIdentity($identity)
+    {
+        if ( null == $this->entityManager->remove($identity) ) {
 
+            $this->entityManager->flush();
 
+            return true;
+        }
+
+        return false;
+    }
 }

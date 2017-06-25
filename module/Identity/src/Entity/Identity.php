@@ -46,7 +46,7 @@ class Identity
     protected $dateCreated;
 
     /**
-     * @ORM\ManyToOne(targetEntity="\User\Entity\User", inversedBy="identities", cascade={"persist", "remove"})
+     * @ORM\ManyToOne(targetEntity="\User\Entity\User", inversedBy="identities")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
      */
     protected $user;

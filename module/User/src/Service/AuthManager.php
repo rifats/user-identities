@@ -59,11 +59,11 @@ class AuthManager
         // If user wants to "remember him", we will make session to expire in
         // one month. By default session expires in 2 hour (as specified in our
         // config/global.php file).
-        if ($result->getCode()==Result::SUCCESS && $rememberMe) {
+        #if ($result->getCode()==Result::SUCCESS && $rememberMe) {
 
             // Session cookie will expire in 1 month (30 days).
-            $this->sessionManager->rememberMe(60*60*24*30);
-        }
+        #    $this->sessionManager->rememberMe(60*60*24*30);
+        #}
 
         return $result;
     }

@@ -5,6 +5,7 @@ use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 use User\Entity\User;
 use User\Form\UserForm;
+use Zend\Authentication\Result;
 use User\Form\PasswordChangeForm;
 use User\Form\PasswordResetForm;
 
@@ -27,12 +28,26 @@ class UserController extends AbstractActionController
     private $userManager;
 
     /**
+     * Auth service.
+     * @var \Zend\Authentication\AuthenticationService
+     */
+    private $authService;
+
+    /**
+     * Auth manager.
+     * @var \User\Service\AuthManager
+     */
+    private $authManager;
+
+    /**
      * Constructor.
      */
-    public function __construct($entityManager, $userManager)
+    public function __construct($entityManager, $authService, $userManager, $authManager)
     {
-        $this->entityManager = $entityManager;
-        $this->userManager = $userManager;
+        $this->entityManager    = $entityManager;
+        $this->authService      = $authService;
+        $this->userManager      = $userManager;
+        $this->authManager      = $authManager;
     }
 
     /**
@@ -52,7 +67,8 @@ class UserController extends AbstractActionController
 
     /**
      * @return \Zend\Http\Response|ViewModel
-     * This action displays a page allowing to add a new user.
+     *
+     * Displays a page allowing to add a new user.
      */
     public function addAction()
     {
@@ -73,8 +89,23 @@ class UserController extends AbstractActionController
                 // Get filtered and validated data
                 $data = $form->getData();
 
-                // Add user.
+                // Add user
                 $user = $this->userManager->addUser($data);
+
+                // Remove current user from session
+                $this->authService->clearIdentity();
+
+                // Just added user authorization
+                $result = $this->authManager
+                    ->login($data['email'], $data['password'], $data['remember_me']);
+
+                // Check result
+                if ($result->getCode() == Result::SUCCESS) {
+                    if ($this->authService->hasIdentity()) {
+                    // Identity exists; get it
+                    $user = $this->authService->getIdentity();
+                    }
+                }
 
                 // Redirect to "view" page
                 return $this->redirect()->toRoute('users',
@@ -89,7 +120,8 @@ class UserController extends AbstractActionController
 
     /**
      * @return ViewModel
-     * The "view" action displays a page allowing to view user's details.
+     *
+     * Displays a page allowing to view user's details.
      */
     public function viewAction()
     {
@@ -115,7 +147,8 @@ class UserController extends AbstractActionController
 
     /**
      * @return \Zend\Http\Response|ViewModel
-     * The "edit" action displays a page allowing to edit user.
+     *
+     * Displays a page allowing to edit user.
      */
     public function editAction()
     {
@@ -173,7 +206,8 @@ class UserController extends AbstractActionController
 
     /**
      * @return \Zend\Http\Response|ViewModel
-     * This action displays a page allowing to change user's password.
+     *
+     * Displays a page allowing to change user's password.
      */
     public function changePasswordAction()
     {
@@ -231,7 +265,8 @@ class UserController extends AbstractActionController
 
     /**
      * @return \Zend\Http\Response|ViewModel
-     * This action displays the "Reset Password" page.
+     *
+     * Displays the "Reset Password" page.
      */
     public function resetPasswordAction()
     {
@@ -275,7 +310,8 @@ class UserController extends AbstractActionController
     /**
      * @return ViewModel
      * @throws \Exception
-     * This action displays an informational message page.
+     *
+     * Displays an informational message page.
      * For example "Your password has been resetted" and so on.
      */
     public function messageAction()
@@ -296,7 +332,8 @@ class UserController extends AbstractActionController
     /**
      * @return \Zend\Http\Response|ViewModel
      * @throws \Exception
-     * This action displays the "Reset Password" page.
+     *
+     * Displays the "Reset Password" page.
      */
     public function setPasswordAction()
     {
@@ -348,7 +385,12 @@ class UserController extends AbstractActionController
         ]);
     }
 
-
+    /**
+     * @return \Zend\Http\Response
+     * @throws \Exception
+     *
+     * Deletes User with all related identities.
+     */
     public function deleteAction()
     {
         $id = (int)$this->params()->fromRoute('id', -1);
@@ -362,18 +404,23 @@ class UserController extends AbstractActionController
             ->find($id);
 
         if( !$user ) {
-            throw new \Exception('Such a user does not exist');
+            throw new \Exception('Such user does not exist');
         }
+
+        $username = $user->getUsername();
 
         // Delete user.
         $result = $this->userManager->deleteUser($user);
 
+        // TODO Проверить Flash messages!
         if( $result ) {
             // Success Flash message
-
+            $this->flashMessenger()->addSuccessMessage(
+                'User '. $username .' deleted from database');
         } else {
             // Fails Flash message
-
+            $this->flashMessenger()->addErrorMessage(
+                'An error has occurred. The user is not deleted.');
         }
 
         // Redirect to "index" page

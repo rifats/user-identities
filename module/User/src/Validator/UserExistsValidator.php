@@ -5,8 +5,10 @@ use Zend\Validator\AbstractValidator;
 use User\Entity\User;
 
 /**
- * This validator class is designed for checking if there is an existing user
- * with such an email.
+ * Class UserExistsValidator
+ * @package User\Validator
+ *
+ * Checks if there is an existing user with such an email.
  */
 class UserExistsValidator extends AbstractValidator
 {

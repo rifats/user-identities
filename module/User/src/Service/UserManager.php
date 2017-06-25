@@ -246,13 +246,14 @@ class UserManager
     /**
      * @param $user
      * @return bool
-     * This method deletes user data with identities from DB.
+     *
+     * Deletes user data with identities from DB.
      */
     public function deleteUser($user)
     {
         if ( null == $this->entityManager->remove($user) ) {
 
-            //$this->entityManager->flush();
+            $this->entityManager->flush();
 
             return true;
         }

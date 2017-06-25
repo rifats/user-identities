@@ -53,8 +53,8 @@ class IdentityController extends AbstractActionController
 
     public function addAction()
     {
-        // Current user
-        $user = $this->authService->getIdentity();
+        // Current user in session
+        $authorizedUser = $this->authService->getIdentity();
 
         // Create identity form
         $form = new IdentityForm('create', $this->entityManager);
@@ -74,7 +74,7 @@ class IdentityController extends AbstractActionController
                 $data = $form->getData();
 
                 // Add identity.
-                $identity = $this->identityManager->addIdentity($data, $user);
+                $identity = $this->identityManager->addIdentity($data, $authorizedUser);
 
                 // Redirect to "view" page
                 return $this->redirect()->toRoute('users',
@@ -118,7 +118,46 @@ class IdentityController extends AbstractActionController
         ]);
     }
 
+    /**
+     * @return \Zend\Http\Response
+     * @throws \Exception
+     *
+     * Deletes Identity.
+     */
     public function deleteAction()
     {
+        $id = (int)$this->params()->fromRoute('id', -1);
+        if ($id<1) {
+            $this->getResponse()->setStatusCode(404);
+            return;
+        }
+
+        // Verification of the existence of the identity
+        $identity = $this->entityManager->getRepository(Identity::class)
+            ->find($id);
+
+        if( !$identity ) {
+            throw new \Exception('Such identity does not exist');
+        }
+
+        $userId = $identity->getUser()->getId();
+
+        // Delete identity.
+        $result = $this->identityManager->deleteIdentity($identity);
+
+        // TODO Проверить Flash messages!
+        if( $result ) {
+            // Success Flash message
+            $this->flashMessenger()->addSuccessMessage(
+                'Identity has been deleted from database');
+        } else {
+            // Fails Flash message
+            $this->flashMessenger()->addErrorMessage(
+                'An error has occurred. The identity is not deleted.');
+        }
+
+        // Redirect to user page
+        return $this->redirect()->toRoute('users',
+            ['action'=>'view', 'id'=>$userId]);
     }
 }

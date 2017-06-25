@@ -45,55 +45,52 @@ $this->pageBreadcrumbs()->setItems([
     </div>
 </div>
 
-<h1>User's Identities:</h1>
-<p>
-    <a class="btn btn-default" href="
-    <?= $this->url('identities', ['action'=>'add']); ?>">
-        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New Identity / Добавить документ
-    </a>
-</p>
+<!-- Test if the User is connected -->
+<?php if( $this->identity()->getId() == $user->getId() ): ?>
 
-<?php
-if ( count($user->getIdentities()) > 0 ) {
-?>
-    <div class="row">
-        <div class="col-md-12">
-            <table class="table table-striped table-bordered">
-                <tr>
-                    <th>Identity type / Тип</th>
-                    <th>Description / Описание</th>
-                    <th>Date added / Добавлено</th>
-                    <th>Actions</th>
-                </tr>
-                <?php
-                foreach ($user->getIdentities() as $identity) {
-                    ?>
+    <h1>User's Identities:</h1>
+    <p>
+        <a class="btn btn-default" href="<?= $this->url('identities', ['action'=>'add']); ?>">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New Identity / Добавить документ
+        </a>
+    </p>
+
+    <?php if ( count($user->getIdentities()) > 0 ): ?>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-striped table-bordered">
                     <tr>
-                        <td><?= $this->escapeHtml($identity->getIdentType()) ?></td>
-                        <td></td>
-                        <td><?= $this->escapeHtml($identity->getDateCreated()) ?></td>
-
-                        <td>
-                            <a class="btn btn-info" href="<?= $this->url('identities',
-                                ['action'=>'edit', 'id'=>$user->getId()]); ?>">
-                                <span class="glyphicon glyphicon-pencil" ></span> Edit / Редактировать
-                            </a>
-                            <a class="btn btn-danger" href="<?= $this->url('identities',
-                                ['action'=>'delete', 'id'=>$user->getId()]); ?>"
-                               onclick="return confirm('Are you sure you want to delete this identity?')">
-                                <span class="glyphicon glyphicon-remove"></span> Delete
-                            </a>
-                        </td>
-
+                        <th>Identity type / Тип</th>
+                        <th>Description / Описание</th>
+                        <th>Date added / Добавлено</th>
+                        <th>Actions</th>
                     </tr>
-                <?php
-                }
-                ?>
-            </table>
-        </div>
-    </div>
-<?php
-}
-?>
+                    <?php foreach ($user->getIdentities() as $identity): ?>
+                        <tr>
+                            <td><?= $this->escapeHtml($identity->getIdentType()) ?></td>
+                            <td></td>
+                            <td><?= $this->escapeHtml($identity->getDateCreated()) ?></td>
 
-<?= $this->flashMessenger()->render('error', ['alert', 'alert-warning']); ?>
+                            <td>
+                                <a class="btn btn-info" href="<?= $this->url('identities',
+                                    ['action'=>'edit', 'id'=>$user->getId()]); ?>">
+                                    <span class="glyphicon glyphicon-pencil" ></span> Edit / Редактировать
+                                </a>
+                                <a class="btn btn-danger" href="<?= $this->url('identities',
+                                    ['action'=>'delete', 'id'=>$identity->getId()]); ?>"
+                                   onclick="return confirm('Are you sure you want to delete this identity?')">
+                                    <span class="glyphicon glyphicon-remove"></span> Delete
+                                </a>
+                            </td>
+
+                        </tr>
+                    <?php endforeach; ?>
+                </table>
+            </div>
+        </div>
+    <?php endif; ?>
+
+<?php else: ?>
+    <p>You do not have access to this user documents</p>
+<?php endif ?>
+
