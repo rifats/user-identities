@@ -17,7 +17,7 @@ $this->pageBreadcrumbs()->setItems([
 <?= $this->flashMessenger()->render('info', ['alert', 'alert-info']); ?>
 
 <div class="row">
-    <div class="col-md-4"><h1>View Identity</h1></div>
+    <div class="col-md-6"><h1>View Identity</h1></div>
     <div class="col-md-2 text-right">
         <a class="btn btn-default btn-xs" href="<?= $this->url('users',
             ['action'=>'view', 'id'=>$identity->getUser()->getId()]); ?>">
@@ -27,32 +27,55 @@ $this->pageBreadcrumbs()->setItems([
 </div>
 
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-8">
         <table class="table table-striped table-bordered">
             <tr>
                 <th>ID:</th>
                 <td><?= $this->escapeHtml($identity->getId()) ?></td>
             </tr>
             <tr>
-                <th>Ident type:</th>
-                <td><?= $this->escapeHtml($identity->getIdentType()) ?></td>
+                <th>Identity type / Тип</th>
+                <td><?= $this->escapeHtml($identity->getIdentityTypeAsString()) ?></td>
             </tr>
             <tr>
-                <th>Name:</th>
+                <th>Name / Имя</th>
                 <td><?= $this->escapeHtml($identity->getName()) ?></td>
             </tr>
             <tr>
-                <th>Surname:</th>
+                <th>Surname / Фамилия</th>
                 <td><?= $this->escapeHtml($identity->getSurname()) ?></td>
             </tr>
+
             <tr>
-                <th>Added:</th>
-                <td><?= $this->escapeHtml($identity->getDateCreated()) ?></td>
+                <th>Identity ID / Номер (и серия)</th>
+                <td><?= $this->escapeHtml($identity->getidentityId()) ?>
+                    (<?= $this->escapeHtml($identity->getRange()) ?>)</td>
             </tr>
-            <!--tr>
-                <th>Status:</th>
-                <td></td>
-            </tr-->
+
+            <tr>
+                <th>Description / Описание</th>
+                <td><?= $this->escapeHtml($identity->getDescription()) ?></td>
+            </tr>
+            <tr>
+                <th>Date of issue / Выдан</th>
+                <td><?= $this->escapeHtml($identity->getDateOfIssue()->format('d-m-Y')) ?></td>
+            </tr>
+            <tr>
+                <th>Date of expire / Действителен до</th>
+                <td><?= $this->escapeHtml($identity->getDateOfExpire()->format('d-m-Y')) ?></td>
+            </tr>
+            <tr>
+                <th>Authority / Кем выдан</th>
+                <td><?= $this->escapeHtml($identity->getAuthority()) ?></td>
+            </tr>
+            <tr>
+                <th>Added / Добавлен в базу</th>
+                <td><?= $this->escapeHtml($identity->getDateCreated()->format('d-m-Y')) ?></td>
+            </tr>
+            <tr>
+                <th>Is valid / Действителен</th>
+                <td><?= $this->escapeHtml($identity->getIsValidAsString()) ?></td>
+            </tr>
         </table>
     </div>
 </div>

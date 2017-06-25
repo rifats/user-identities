@@ -64,6 +64,7 @@ class User
 
     /**
      * @ORM\OneToMany(targetEntity="\Identity\Entity\Identity", mappedBy="user", cascade={"persist", "remove"}, orphanRemoval=true)
+     * @ORM\OrderBy({"id" = "DESC"})
      */
     protected $identities;
 

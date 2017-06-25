@@ -94,8 +94,6 @@ class UserManager
             $user->setStatus(1);
             $user->setDateCreated(date('Y-m-d H:i:s'));
 
-            var_dump($user);
-
             $this->entityManager->persist($user);
             $this->entityManager->flush();
         }

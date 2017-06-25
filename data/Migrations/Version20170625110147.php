@@ -22,7 +22,7 @@ class Version20170625110147 extends AbstractMigration
     public function up(Schema $schema)
     {
         $table = $schema->getTable('identity');
-        $table->addUniqueIndex(['ident_type', 'identity_id'], 'identity_type_id_index');
+        $table->addUniqueIndex(['identity_type', 'identity_id'], 'identity_type_id_index');
 
     }
 

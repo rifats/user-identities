@@ -51,14 +51,28 @@ class IdentityManager
 
         // Create new Identity entity.
         $identity = new Identity();
-        $identity->setIdenttype($data['identType']);
+        $identity->setIdentityType($data['identityType']);
         $identity->setName($data['name']);
         $identity->setSurname($data['surname']);
-        $identity->setUser($user);
-        // Другие поля добавить
+
+        $identity->setRange((int)$data['range']);
+        $identity->setIdentityId($data['identityId']);
+        $identity->setDescription($data['description']);
+        $identity->setAuthority($data['authority']);
+        $identity->setIsValid($data['isValid']);
 
         $currentDate = date('Y-m-d H:i:s');
-        $identity->setDateCreated($currentDate);
+        $identity->setDateCreated(new \DateTime($currentDate));
+        $identity->setDateOfIssue(new \DateTime($data['dateOfIssue']));
+        $identity->setDateOfExpire(new \DateTime($data['dateOfExpire']));
+
+        #$identity->setDateCreated($currentDate);
+        #$identity->setDateOfIssue($data['dateOfIssue']);
+        #$identity->setDateOfExpire($data['dateOfExpire']);
+
+        $identity->setUser($user);
+
+        #var_dump($identity);
 
         // Add the entity to the entity manager.
         $this->entityManager->persist($identity);

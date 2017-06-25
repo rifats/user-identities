@@ -1,11 +1,5 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 namespace Identity\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
@@ -18,6 +12,15 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Identity 
 {
+    // Identity type constants.
+    const PASSPORT          = 1; // Passport
+    const FOREIGN_PASSPORT  = 2; // Foreign passport
+    const DRIVING_LICENCE   = 3; // Driving license
+
+    // Is valid type constants.
+    const VALID_IDENTITY        = 1; // Valid
+    const NOT_VALID_IDENTITY    = 0; // Not valid
+
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
@@ -26,9 +29,9 @@ class Identity
     protected $id;
 
     /** 
-     * @ORM\Column(name="ident_type", type="string", length=50, nullable=false)
+     * @ORM\Column(name="identity_type", type="integer", length=2, nullable=false)
      */
-    protected $identType;
+    protected $identityType;
 
     /** 
      * @ORM\Column(name="name", type="string", length=30, nullable=false)
@@ -46,7 +49,7 @@ class Identity
     protected $dateCreated;
 
     /**
-     * @ORM\Column(name="range", type="integer", nullable=true)
+     * @ORM\Column(name="identity_range", type="integer", nullable=true)
      */
     protected $range;
 
@@ -111,19 +114,45 @@ class Identity
     }
 
     /**
-     * @param mixed $identType
+     * @param mixed $identityType
      */
-    public function setIdentType($identType)
+    public function setIdentityType($identityType)
     {
-        $this->identType = $identType;
+        $this->identityType = $identityType;
+    }
+
+    /**
+     * Returns possible Identity types as array.
+     * @return array
+     */
+    public static function getIdentityTypesList()
+    {
+        return [
+            self::PASSPORT          => 'Passport / Паспорт',
+            self::FOREIGN_PASSPORT  => 'Foreign passport / Загранпаспорт',
+            self::DRIVING_LICENCE   => 'Driving license / Водительские права',
+        ];
+    }
+
+    /**
+     * Returns Identity types as string.
+     * @return string
+     */
+    public function getIdentityTypeAsString()
+    {
+        $list = self::getIdentityTypesList();
+        if (isset($list[$this->identityType]))
+            return $list[$this->identityType];
+
+        return 'Unknown';
     }
 
     /**
      * @return mixed
      */
-    public function getIdentType()
+    public function getIdentityType()
     {
-        return $this->identType;
+        return $this->identityType;
     }
 
     /**
@@ -192,11 +221,14 @@ class Identity
     }
 
     /**
-     * @param mixed $dateOfExpire
+     * @param $dateOfExpire
+     * @return $this
      */
     public function setDateOfExpire($dateOfExpire)
     {
         $this->dateOfExpire = $dateOfExpire;
+
+        return $this;
     }
 
     /**
@@ -208,11 +240,14 @@ class Identity
     }
 
     /**
-     * @param mixed $dateOfIssue
+     * @param $dateOfIssue
+     * @return $this
      */
     public function setDateOfIssue($dateOfIssue)
     {
         $this->dateOfIssue = $dateOfIssue;
+
+        return $this;
     }
 
     /**
@@ -261,6 +296,31 @@ class Identity
     public function setIsValid($isValid)
     {
         $this->isValid = $isValid;
+    }
+
+    /**
+     * Returns possible isValid types as array.
+     * @return array
+     */
+    public static function getIsValidList()
+    {
+        return [
+            self::VALID_IDENTITY        => 'Valid / Действителен',
+            self::NOT_VALID_IDENTITY    => 'Not valid / Не действителен',
+        ];
+    }
+
+    /**
+     * Returns Identity types as string.
+     * @return string
+     */
+    public function getIsValidAsString()
+    {
+        $list = self::getIsValidList();
+        if (isset($list[$this->isValid]))
+            return $list[$this->isValid];
+
+        return 'Unknown';
     }
 
     /**

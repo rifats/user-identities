@@ -24,7 +24,7 @@ class Version20170623230800 extends AbstractMigration
     {
         $table = $schema->createTable('identity');
         $table->addColumn('id', 'integer', ['autoincrement'=>true]);
-        $table->addColumn('ident_type', 'string', ['notnull'=>true, 'length'=>50]);
+        $table->addColumn('identity_type', 'integer', ['notnull'=>true, 'length'=>2]);
         $table->addColumn('name', 'string', ['notnull'=>true, 'length'=>30]);
         $table->addColumn('surname', 'string', ['notnull'=>true, 'length'=>40]);
         $table->addColumn('date_created', 'datetime', ['notnull'=>true]);

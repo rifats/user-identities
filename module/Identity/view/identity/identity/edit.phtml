@@ -34,7 +34,8 @@ $form->get('submit')
 $form->prepare();
 ?>
 
-<h1>Edit Identity "<?= $this->escapeHtml($identity->getIdentType()) ?>"</h1>
+<h1>Edit Identity "<?= $this->escapeHtml($identity->getIdentityTypeAsString()) ?>"
+    <small>№ <?= $this->escapeHtml($identity->getIdentityId()) ?></small></h1>
 
 <div class="row">
     <div class="col-md-6">

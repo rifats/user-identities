@@ -57,16 +57,16 @@ class IdentityForm extends Form
             // Identity type
             $this->add([
                 'type'  => 'select',
-                'name' => 'identType',
+                'name' => 'identityType',
                 'attributes' => [
-                    'id' => 'identType'
+                    'id' => 'identityType'
                 ],
                 'options' => [
                     'label' => 'Identity type',
                     'value_options' => [
-                        'passport' => 'Passport',
-                        'f_passport' => 'Foreign passport',
-                        'd_license' => 'Driving license',
+                        1 => 'Passport / Паспорт',
+                        2 => 'Foreign passport / Загранпаспорт',
+                        3 => 'Driving license / Водительские права',
                     ]
                 ],
             ]);
@@ -80,7 +80,7 @@ class IdentityForm extends Form
               'id' => 'name'  
             ],
             'options' => [
-                'label' => 'Name',
+                'label' => 'Name / Имя',
             ],
         ]);
         
@@ -92,7 +92,95 @@ class IdentityForm extends Form
                 'id' => 'surname'
             ],
             'options' => [
-                'label' => 'Surname',
+                'label' => 'Surname / Фамилия',
+            ],
+        ]);
+
+        // Range
+        $this->add([
+            'type'  => 'number',
+            'name' => 'range',
+            'attributes' => [
+                'id' => 'range'
+            ],
+            'options' => [
+                'label' => 'Range / Серия',
+            ],
+        ]);
+
+        // IdentityId
+        $this->add([
+            'type'  => 'text',
+            'name' => 'identityId',
+            'attributes' => [
+                'id' => 'identityId'
+            ],
+            'options' => [
+                'label' => 'Identity ID / Номер',
+            ],
+        ]);
+
+        // Description
+        $this->add([
+            'type'  => 'textarea',
+            'name' => 'description',
+            'attributes' => [
+                'id' => 'description'
+            ],
+            'options' => [
+                'label' => 'Description / Описание',
+            ],
+        ]);
+
+        // DateOfIssue
+        $this->add([
+            'type'  => 'DateSelect',
+            'name' => 'dateOfIssue',
+            'attributes' => [
+                'id' => 'dateOfIssue'
+            ],
+            'options' => [
+                'label' => 'Date of issue / Дата выдачи',
+            ],
+        ]);
+
+        // DateOfExpire
+        $this->add([
+            'type'  => 'DateSelect',
+            'name' => 'dateOfExpire',
+            'attributes' => [
+                'id' => 'dateOfExpire'
+            ],
+            'options' => [
+                'label' => 'Date of expire / Действителен до',
+            ],
+        ]);
+
+        // Authority
+        $this->add([
+            'type'  => 'text',
+            'name' => 'authority',
+            'attributes' => [
+                'id' => 'authority'
+            ],
+            'options' => [
+                'label' => 'Authority / Кем выдан',
+            ],
+        ]);
+
+        // IsValid
+        $this->add([
+            'type'  => 'select',
+            'name' => 'isValid',
+            'attributes' => [
+                'id' => 'isValid'
+            ],
+            'options' => [
+                'label' => 'Is valid / Действителен',
+                'value_options' => [
+                    1 => 'Valid / Действителен',
+                    0 => 'Not valid / Не действителен',
+                ]
             ],
         ]);
         
