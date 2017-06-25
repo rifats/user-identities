@@ -26,7 +26,7 @@ class Version20170625103740 extends AbstractMigration
         $table->addColumn('identity_id', 'string', ['notnull'=>true, 'length'=>50]);
         $table->addColumn('description', 'text', ['notnull'=>false]);
         $table->addColumn('date_of_issue', 'datetime', ['notnull'=>true]);
-        $table->addColumn('date_of_expire', 'datetime', ['notnull'=>true]);
+        $table->addColumn('date_of_expire', 'datetime', ['notnull'=>false]);
         $table->addColumn('authority', 'string', ['notnull'=>false, 'length'=>250]);
         $table->addColumn('is_valid', 'boolean', ['notnull'=>true, 'default'=>1]);
     }

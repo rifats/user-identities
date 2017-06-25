@@ -69,7 +69,7 @@ class Identity
     protected $dateOfIssue;
 
     /**
-     * @ORM\Column(name="date_of_expire", type="datetime", nullable=false)
+     * @ORM\Column(name="date_of_expire", type="datetime", nullable=true)
      */
     protected $dateOfExpire;
 
