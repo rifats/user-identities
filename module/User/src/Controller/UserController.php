@@ -100,7 +100,7 @@ class UserController extends AbstractActionController
 
                 // Just added user authorization
                 $result = $this->authManager
-                    ->login($data['email'], $data['password'], $data['remember_me']);
+                    ->login($data['username'], $data['email'], $data['password'], $data['remember_me']);
 
                 // Check result
                 if ($result->getCode() == Result::SUCCESS) {
