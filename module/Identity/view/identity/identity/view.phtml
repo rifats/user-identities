@@ -49,7 +49,10 @@ $this->pageBreadcrumbs()->setItems([
             <tr>
                 <th>Identity ID / Номер (и серия)</th>
                 <td><?= $this->escapeHtml($identity->getidentityId()) ?>
-                    (<?= $this->escapeHtml($identity->getRange()) ?>)</td>
+                    <?php if ($identity->getRange()): ?>
+                        (<?= $this->escapeHtml($identity->getRange()) ?>)
+                    <?php endif; ?>
+                </td>
             </tr>
 
             <tr>

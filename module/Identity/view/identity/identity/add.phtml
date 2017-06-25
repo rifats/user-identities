@@ -135,6 +135,7 @@ $form->prepare();
             <?= $this->formElementErrors($form->get('isValid')); ?>
         </div>
 
+        <?= $this->formElement($form->get('csrf')) ?>
         <?= $this->formElement($form->get('submit')); ?>
 
         <?= $this->form()->closeTag(); ?>

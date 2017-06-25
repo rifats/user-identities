@@ -45,16 +45,16 @@ $this->headTitle('Users');
             <td>
                 <a class="btn btn-info" href="<?= $this->url('users',
                     ['action'=>'edit', 'id'=>$user->getId()]); ?>">
-                    <span class="glyphicon glyphicon-pencil" ></span> Edit
+                    <span class="glyphicon glyphicon-pencil" ></span> Edit / Редактировать
                 </a>
-                <a class="btn btn-default" href="<?= $this->url('users',
+                <!--a class="btn btn-default" href="<?= $this->url('users',
                     ['action'=>'change-password', 'id'=>$user->getId()]); ?>">
                     <span class="glyphicon glyphicon-asterisk"></span> Change Password
-                </a>
+                </a-->
                 <a class="btn btn-danger" href="<?= $this->url('users',
                     ['action'=>'delete', 'id'=>$user->getId()]); ?>"
                     onclick="return confirm('Are you sure you want to delete user information?')">
-                    <span class="glyphicon glyphicon-remove"></span> Delete
+                    <span class="glyphicon glyphicon-remove"></span> Delete / Удалить
                 </a>
             </td>
         </tr>

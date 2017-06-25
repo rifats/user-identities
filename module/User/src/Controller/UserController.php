@@ -8,6 +8,7 @@ use User\Form\UserForm;
 use Zend\Authentication\Result;
 use User\Form\PasswordChangeForm;
 use User\Form\PasswordResetForm;
+use Zend\Form\Element;
 
 /**
  * This controller is responsible for user management (adding, editing,
@@ -73,7 +74,9 @@ class UserController extends AbstractActionController
     public function addAction()
     {
         // Create user form
+        #$csrf = new Element\Csrf('csrf');
         $form = new UserForm('create', $this->entityManager);
+        #$form->add($csrf);
 
         // Check if user has submitted the form
         if ($this->getRequest()->isPost()) {
@@ -167,7 +170,9 @@ class UserController extends AbstractActionController
         }
 
         // Create user form
+        #$csrf = new Element\Csrf('csrf');
         $form = new UserForm('update', $this->entityManager, $user);
+        #$form->add($csrf);
 
         // Check if user has submitted the form
         if ($this->getRequest()->isPost()) {

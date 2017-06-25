@@ -62,28 +62,38 @@ $this->pageBreadcrumbs()->setItems([
                     <tr>
                         <th>Identity type / Тип</th>
                         <th>Description / Описание</th>
-                        <!--th>Date added / Добавлено</th-->
+                        <th>Date of issue / Выдан</th>
+                        <th>Date added / Добавлено</th>
+                        <th>Valid</th>
                         <th>Actions</th>
                     </tr>
                     <?php foreach ($user->getIdentities() as $identity): ?>
                         <tr>
                             <td>
                                 <a href="<?= $this->url('identities', ['action'=>'view', 'id'=>$identity->getId()]); ?>">
-                                    <?= $this->escapeHtml($identity->getIdentityTypeAsString()) ?>
+                                    <?= $this->escapeHtml($identity->getIdentityTypeAsString()) ?><br/>
                                     № <?= $this->escapeHtml($identity->getIdentityId()) ?>
                                 </a>
                             </td>
-                            <td></td>
-
+                            <td><?= $this->escapeHtml($identity->getDescription()) ?></td>
+                            <td><?= $this->escapeHtml($identity->getDateOfIssue()->format('d-m-Y')) ?></td>
+                            <td><?= $this->escapeHtml($identity->getDateCreated()->format('d-m-Y')) ?></td>
+                            <td>
+                                <?php if ( $identity->getIsValid() ): ?>
+                                <button type="button" class="btn btn-success disabled">+</button>
+                                <?php else: ?>
+                                <button type="button" class="btn btn-danger disabled">-</button>
+                                <?php endif; ?>
+                            </td>
                             <td>
                                 <a class="btn btn-info" href="<?= $this->url('identities',
                                     ['action'=>'edit', 'id'=>$identity->getId()]); ?>">
-                                    <span class="glyphicon glyphicon-pencil" ></span> Edit / Редактировать
+                                    <span class="glyphicon glyphicon-pencil" ></span> Edit
                                 </a>
                                 <a class="btn btn-danger" href="<?= $this->url('identities',
                                     ['action'=>'delete', 'id'=>$identity->getId()]); ?>"
                                    onclick="return confirm('Are you sure you want to delete this identity?')">
-                                    <span class="glyphicon glyphicon-remove"></span> Delete / Удалить
+                                    <span class="glyphicon glyphicon-remove"></span>
                                 </a>
                             </td>
 

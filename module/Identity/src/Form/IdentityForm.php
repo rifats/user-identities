@@ -134,7 +134,8 @@ class IdentityForm extends Form
 
         // DateOfIssue
         $this->add([
-            'type'  => 'DateSelect',
+            'type'  => 'DateSelect', // DateSelect with an empty string set's to todays date (or last in range)
+                                     // https://github.com/zendframework/zend-form/issues/8
             'name' => 'dateOfIssue',
             'attributes' => [
                 'id' => 'dateOfIssue'
@@ -146,13 +147,17 @@ class IdentityForm extends Form
 
         // DateOfExpire
         $this->add([
-            'type'  => 'DateSelect',
+            'type'  => 'DateSelect', // DateSelect with an empty string set's to todays date (or last in range)
             'name' => 'dateOfExpire',
             'attributes' => [
-                'id' => 'dateOfExpire'
+                'id' => 'dateOfExpire',
             ],
             'options' => [
                 'label' => 'Date of expire / Действителен до',
+                //'allowLabelHTML' => true,
+                //'min_year' => 1917,
+                'max_year' => date('Y')+20,
+                'default' => null
             ],
         ]);
 
@@ -180,6 +185,17 @@ class IdentityForm extends Form
                 'value_options' => [
                     1 => 'Valid / Действителен',
                     0 => 'Not valid / Не действителен',
+                ]
+            ],
+        ]);
+
+        // Add the CSRF field
+        $this->add([
+            'type' => 'csrf',
+            'name' => 'csrf',
+            'options' => [
+                'csrf_options' => [
+                    'timeout' => 600
                 ]
             ],
         ]);

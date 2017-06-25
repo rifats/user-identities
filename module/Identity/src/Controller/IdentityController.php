@@ -6,6 +6,7 @@ use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 use Identity\Entity\Identity;
 use Identity\Form\IdentityForm;
+use Zend\Form\Element;
 
 /**
  * Class IdentityController
@@ -60,7 +61,9 @@ class IdentityController extends AbstractActionController
         $authorizedUser = $this->authService->getIdentity();
 
         // Create identity form
+        #$csrf = new Element\Csrf('csrf');
         $form = new IdentityForm('create', $this->entityManager);
+        #$form->add($csrf);
 
         // Check if user has submitted the form
         if ($this->getRequest()->isPost()) {
@@ -137,7 +140,9 @@ class IdentityController extends AbstractActionController
         }
 
         // Create identity form
+        #$csrf = new Element\Csrf('csrf');
         $form = new IdentityForm('update', $this->entityManager, $identity);
+        #$form->add($csrf);
 
         // Check if the form is submitted
         if ($this->getRequest()->isPost()) {
