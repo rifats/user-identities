@@ -1,23 +1,60 @@
 <?php
-$form = $this->form;
+$this->headTitle('Edit Identity');
+
+/*
+$this->mainMenu()->setActiveItemId('users');
+
+$this->pageBreadcrumbs()->setItems([
+    'Home'=>$this->url('home'),
+    'Manage Users'=>$this->url('users'),
+    'Edit User'=>$this->url('users', ['action'=>'edit', 'id'=>$user->getId()])
+]);
+*/
+
+$form->get('name')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>'John'
+]);
+
+$form->get('surname')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>'Doe'
+]);
+
+/*
+$form->get('status')->setAttributes([
+    'class'=>'form-control'
+]);
+*/
+
+$form->get('submit')
+    ->setAttributes(['class'=>'btn btn-primary'])
+    ->setValue('Save');
+
 $form->prepare();
 ?>
 
-<?= $this->form()->openTag($form); ?>
-	
-<?= $this->formLabel($form->get('Identity type')); ?>
-<?= $this->formElement($form->get('identType')); ?>
-<?= $this->formElementErrors($form->get('identtype')); ?>                  
-	
-<?= $this->formLabel($form->get('Name')); ?>
-<?= $this->formElement($form->get('name')); ?>
-<?= $this->formElementErrors($form->get('name')); ?>
-   
-<?= $this->formLabel($form->get('Surname')); ?>
-<?= $this->formElement($form->get('surname')); ?>
-<?= $this->formElementErrors($form->get('surname')); ?>                  
-	
-<?= $this->formElement($form->get('submit')); ?>
-	
-<?= $this->form()->closeTag(); ?>
+<h1>Edit Identity "<?= $this->escapeHtml($identity->getIdentType()) ?>"</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <?= $this->form()->openTag($form); ?>
+
+        <div class="form-group">
+            <?= $this->formLabel($form->get('name')); ?>
+            <?= $this->formElement($form->get('name')); ?>
+            <?= $this->formElementErrors($form->get('name')); ?>
+        </div>
+
+        <div class="form-group">
+            <?= $this->formLabel($form->get('surname')); ?>
+            <?= $this->formElement($form->get('surname')); ?>
+            <?= $this->formElementErrors($form->get('surname')); ?>
+        </div>
+
+        <?= $this->formElement($form->get('submit')); ?>
+
+        <?= $this->form()->closeTag(); ?>
+    </div>
+</div>
 

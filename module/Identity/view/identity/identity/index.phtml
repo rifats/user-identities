@@ -1,6 +1,6 @@
 <?php
 
-$title = 'My identities';
+$title = 'User identities';
 $this->headTitle($title);
 ?>
 <h1><?= $this->escapeHtml($title) ?></h1>
@@ -21,8 +21,8 @@ $this->headTitle($title);
         <td><?= $this->escapeHtml($identity->name) ?></td>
         <td><?= $this->escapeHtml($identity->surname) ?></td>
         <td>
-            <a href="<?= $this->url('$identity', ['action' => 'edit', 'id' => $album->id]) ?>">Edit</a>
-            <a href="<?= $this->url('$identity', ['action' => 'delete', 'id' => $album->id]) ?>">Delete</a>
+            <a href="<?= $this->url('identities', ['action' => 'edit', 'id' => $identity->id]) ?>">Edit</a>
+            <a href="<?= $this->url('identities', ['action' => 'delete', 'id' => $identity->id]) ?>">Delete</a>
         </td>
     </tr>
 <?php endforeach; ?>

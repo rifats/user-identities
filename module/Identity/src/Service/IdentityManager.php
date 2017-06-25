@@ -71,6 +71,33 @@ class IdentityManager
 
     /**
      * @param $identity
+     * @param $data
+     * @return bool
+     * @throws \Exception
+     *
+     * This method updates data of an existing identity.
+     */
+    public function updateIdentity($identity, $data)
+    {
+        // Do not allow to change user email if another user with such email already exits.
+        #if($identity->getEmail()!=$data['email'] && $this->checkUserExists($data['email'])) {
+        #    throw new \Exception("Another user with email address " . $data['email'] . " already exists");
+        #}
+
+        $identity->setName($data['name']);
+        $identity->setSurname($data['surname']);
+        #$identity->setStatus($data['status']);
+
+        // Добавить другие поля
+
+        // Apply changes to database.
+        $this->entityManager->flush();
+
+        return true;
+    }
+
+    /**
+     * @param $identity
      * @return bool
      *
      * Deletes identity data with identities from DB.

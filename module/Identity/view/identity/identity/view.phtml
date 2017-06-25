@@ -1,0 +1,65 @@
+<?php
+$this->headTitle('View Identity');
+
+/*
+$this->mainMenu()->setActiveItemId('users');
+
+$this->pageBreadcrumbs()->setItems([
+    'Home'=>$this->url('home'),
+    'Manage Users'=>$this->url('users'),
+    'View User'=>$this->url('users', ['action'=>'view', 'id'=>$user->getId()])
+]);
+*/
+?>
+
+<?= $this->flashMessenger()->render('error', ['alert', 'alert-warning']); ?>
+<?= $this->flashMessenger()->render('success', ['alert', 'alert-success']); ?>
+<?= $this->flashMessenger()->render('info', ['alert', 'alert-info']); ?>
+
+<div class="row">
+    <div class="col-md-4"><h1>View Identity</h1></div>
+    <div class="col-md-2 text-right">
+        <a class="btn btn-default btn-xs" href="<?= $this->url('users',
+            ['action'=>'view', 'id'=>$identity->getUser()->getId()]); ?>">
+            <span class="glyphicon glyphicon-list" ></span> List / Все
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <table class="table table-striped table-bordered">
+            <tr>
+                <th>ID:</th>
+                <td><?= $this->escapeHtml($identity->getId()) ?></td>
+            </tr>
+            <tr>
+                <th>Ident type:</th>
+                <td><?= $this->escapeHtml($identity->getIdentType()) ?></td>
+            </tr>
+            <tr>
+                <th>Name:</th>
+                <td><?= $this->escapeHtml($identity->getName()) ?></td>
+            </tr>
+            <tr>
+                <th>Surname:</th>
+                <td><?= $this->escapeHtml($identity->getSurname()) ?></td>
+            </tr>
+            <tr>
+                <th>Added:</th>
+                <td><?= $this->escapeHtml($identity->getDateCreated()) ?></td>
+            </tr>
+            <!--tr>
+                <th>Status:</th>
+                <td></td>
+            </tr-->
+        </table>
+    </div>
+</div>
+<p>
+    <a class="btn btn-info" href="<?= $this->url('identities',
+        ['action'=>'edit', 'id'=>$identity->getId()]); ?>">
+        <span class="glyphicon glyphicon-pencil" ></span> Edit / Редактировать
+    </a>
+</p>
+

@@ -51,6 +51,9 @@ class IdentityController extends AbstractActionController
         ]);
     }
 
+    /**
+     * @return \Zend\Http\Response|ViewModel
+     */
     public function addAction()
     {
         // Current user in session
@@ -87,35 +90,93 @@ class IdentityController extends AbstractActionController
         ]);
     }
 
+    /**
+     * @return ViewModel
+     *
+     * Displays a page allowing to view identity's details.
+     */
+    public function viewAction()
+    {
+        $id = (int)$this->params()->fromRoute('id', -1);
+        if ($id<1) {
+            $this->getResponse()->setStatusCode(404);
+            return;
+        }
+
+        // Find a identity with such ID.
+        $identity = $this->entityManager->getRepository(Identity::class)
+            ->find($id);
+
+        if ($identity == null) {
+            $this->getResponse()->setStatusCode(404);
+            return;
+        }
+
+        return new ViewModel([
+            'identity' => $identity
+        ]);
+    }
+
+    /**
+     * @return \Zend\Http\Response|ViewModel
+     */
     public function editAction()
     {
-        // Create form
-        $form = new IdentityForm();
-        
-        // Проверяем, отправил ли пользователь форму
-        if($this->getRequest()->isPost()) 
-        {
-            // Заполняем форму POST-данными
-            $data = $this->params()->fromPost();            
+        $id = (int)$this->params()->fromRoute('id', -1);
+        if ($id<1) {
+            $this->getResponse()->setStatusCode(404);
+            return;
+        }
+
+        $identity = $this->entityManager->getRepository(Identity::class)
+            ->find($id);
+
+        if ($identity == null) {
+            $this->getResponse()->setStatusCode(404);
+            return;
+        }
+
+        // Create identity form
+        $form = new IdentityForm('update', $this->entityManager, $identity);
+
+        // Check if the form is submitted
+        if ($this->getRequest()->isPost()) {
+
+            // Fill in the form with POST data
+            $data = $this->params()->fromPost();
+
             $form->setData($data);
-            
-            // Валидируем форму
+
+            // Validate form
             if($form->isValid()) {
-                
-                // Получаем фильтрованные и валидированные данные
+
+                // Get filtered and validated data
                 $data = $form->getData();
-                
-                // ... Какие-то действия с валидированными данными ...
-		
-                // Перенаправление на страницу "Спасибо"
-                return $this->redirect()->toRoute('identity', ['action'=>'index']);
-            }            
-        } 
-        
-        // Передаем переменную формы представлению
-        return new ViewModel([
-           'form' => $form
-        ]);
+
+                // Update the identity.
+                $result = $this->identityManager->updateIdentity($identity, $data);
+
+                if($result) {
+                    // Success Flash message
+                    $this->flashMessenger()->addSuccessMessage(
+                        'Identity has been updated');
+                }
+
+                // Redirect to "view" page
+                return $this->redirect()->toRoute('identities',
+                    ['action'=>'view', 'id'=>$identity->getId()]);
+            }
+        } else {
+            $form->setData(array(
+                'name'      =>  $identity->getName(),
+                'surname'   =>  $identity->getSurname(),
+            ));
+        }
+
+        return new ViewModel(array(
+            'identity'  => $identity,
+            'form'      => $form
+        ));
     }
 
     /**

@@ -53,22 +53,24 @@ class IdentityForm extends Form
     // кнопку отправки формы).
     private function addElements() 
     {
-        // Identity type
-        $this->add([
-            'type'  => 'select',
-            'name' => 'identType',
-            'attributes' => [                
-                'id' => 'identType'
-            ],
-            'options' => [
-                'label' => 'Identity type',
-                'value_options' => [
-                    'passport' => 'Passport',
-                    'f_passport' => 'Foreign passport',
-                    'd_license' => 'Driving license',
-                ]
-            ],
-        ]);
+        if ($this->scenario == 'create') {
+            // Identity type
+            $this->add([
+                'type'  => 'select',
+                'name' => 'identType',
+                'attributes' => [
+                    'id' => 'identType'
+                ],
+                'options' => [
+                    'label' => 'Identity type',
+                    'value_options' => [
+                        'passport' => 'Passport',
+                        'f_passport' => 'Foreign passport',
+                        'd_license' => 'Driving license',
+                    ]
+                ],
+            ]);
+        }
         
         // Name
         $this->add([
