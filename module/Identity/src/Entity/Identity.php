@@ -26,24 +26,59 @@ class Identity
     protected $id;
 
     /** 
-     * @ORM\Column(name="ident_type")
+     * @ORM\Column(name="ident_type", type="string", length=50, nullable=false)
      */
     protected $identType;
 
     /** 
-     * @ORM\Column(name="name")  
+     * @ORM\Column(name="name", type="string", length=30, nullable=false)
      */
     protected $name;
 
     /** 
-     * @ORM\Column(name="surname")  
+     * @ORM\Column(name="surname", type="string", length=40, nullable=false)
      */
     protected $surname;
 
     /**
-     * @ORM\Column(name="date_created")  
+     * @ORM\Column(name="date_created", type="datetime", nullable=false)
      */
     protected $dateCreated;
+
+    /**
+     * @ORM\Column(name="range", type="integer", nullable=true)
+     */
+    protected $range;
+
+    /**
+     * @ORM\Column(name="identity_id", type="string", length=50, nullable=false)
+     */
+    protected $identityId;
+
+    /**
+     * @ORM\Column(name="description", type="text", nullable=true)
+     */
+    protected $description;
+
+    /**
+     * @ORM\Column(name="date_of_issue", type="datetime", nullable=false)
+     */
+    protected $dateOfIssue;
+
+    /**
+     * @ORM\Column(name="date_of_expire", type="datetime", nullable=false)
+     */
+    protected $dateOfExpire;
+
+    /**
+     * @ORM\Column(name="authority", type="string", length=250, nullable=true)
+     */
+    protected $authority;
+
+    /**
+     * @ORM\Column(name="is_valid", type="boolean", options={"default": true})
+     */
+    protected $isValid;
 
     /**
      * @ORM\ManyToOne(targetEntity="\User\Entity\User", inversedBy="identities")
@@ -138,5 +173,117 @@ class Identity
     {
         $this->user = $user;
         //$user->addIdentity($this);
+    }
+
+    /**
+     * @param mixed $authority
+     */
+    public function setAuthority($authority)
+    {
+        $this->authority = $authority;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAuthority()
+    {
+        return $this->authority;
+    }
+
+    /**
+     * @param mixed $dateOfExpire
+     */
+    public function setDateOfExpire($dateOfExpire)
+    {
+        $this->dateOfExpire = $dateOfExpire;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDateOfExpire()
+    {
+        return $this->dateOfExpire;
+    }
+
+    /**
+     * @param mixed $dateOfIssue
+     */
+    public function setDateOfIssue($dateOfIssue)
+    {
+        $this->dateOfIssue = $dateOfIssue;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDateOfIssue()
+    {
+        return $this->dateOfIssue;
+    }
+
+    /**
+     * @param mixed $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param mixed $identityId
+     */
+    public function setIdentityId($identityId)
+    {
+        $this->identityId = $identityId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getIdentityId()
+    {
+        return $this->identityId;
+    }
+
+    /**
+     * @param mixed $isValid
+     */
+    public function setIsValid($isValid)
+    {
+        $this->isValid = $isValid;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getIsValid()
+    {
+        return $this->isValid;
+    }
+
+    /**
+     * @param mixed $range
+     */
+    public function setRange($range)
+    {
+        $this->range = $range;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRange()
+    {
+        return $this->range;
     }
 }
