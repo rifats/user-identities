@@ -30,6 +30,15 @@ class LoginForm extends Form
      */
     protected function addElements()
     {
+        // Add "username" field
+        $this->add([
+            'type'  => 'text',
+            'name' => 'username',
+            'options' => [
+                'label' => 'Username (Login)',
+            ],
+        ]);
+
         // Add "email" field
         $this->add([
             'type'  => 'text',
@@ -95,6 +104,33 @@ class LoginForm extends Form
         // Create main input filter
         $inputFilter = new InputFilter();
         $this->setInputFilter($inputFilter);
+
+        // Add input for "login" field
+        $inputFilter->add([
+            'name'     => 'username',
+            'required' => true,
+            'filters'  => [
+                ['name' => 'StringTrim'],
+            ],
+            'validators' => [
+                [
+                    'name' => 'Regex',
+                    'options' => [
+                        'pattern' => '/[0-9a-zA-Z\s._-]+/',
+                        'messages' => array(
+                            \Zend\Validator\Regex::INVALID => "Invalid characters in login"
+                        )
+                    ],
+                ],
+                [
+                    'name'    => 'StringLength',
+                    'options' => [
+                        'min' => 5,
+                        'max' => 50
+                    ],
+                ],
+            ],
+        ]);
 
         // Add input for "email" field
         $inputFilter->add([

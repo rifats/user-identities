@@ -168,9 +168,18 @@ class UserForm extends Form
             ],
             'validators' => [
                 [
+                    'name' => 'Regex',
+                    'options' => [
+                        'pattern' => '/[0-9a-zA-Z\s._-]+/',
+                        'messages' => array(
+                            \Zend\Validator\Regex::INVALID => "Invalid characters in login"
+                        )
+                    ],
+                ],
+                [
                     'name'    => 'StringLength',
                     'options' => [
-                        'min' => 1,
+                        'min' => 5,
                         'max' => 50
                     ],
                 ],
