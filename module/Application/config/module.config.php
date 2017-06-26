@@ -78,6 +78,14 @@ return [
             Controller\DownloadController::class => InvokableFactory::class,
         ],
     ],
+    'access_filter' => [
+        'controllers' => [
+            Controller\IndexController::class => [
+                // Give access to "index" actions to anyone.
+                ['actions' => ['index'], 'allow' => '*'],
+            ],
+        ]
+    ],
     'view_manager' => [
         'display_not_found_reason' => true,
         'display_exceptions'       => true,

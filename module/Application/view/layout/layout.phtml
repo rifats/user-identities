@@ -44,7 +44,9 @@
                                 <a href="<?= $this->url('users') ?>">Users / Пользователи</a>
                             </li>
                             <li>
+                                <?php if ($this->identity()): ?>
                                 <a href="<?= $this->url('logout') ?>">Logout / Выйти</a>
+                                <?php endif; ?>
                             </li>
                         </ul>
                     </div>
