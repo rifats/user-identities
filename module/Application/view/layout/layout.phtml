@@ -63,7 +63,7 @@
                                     <li>
                                         <a href="<?= $this->url('users', ['action'=>'view', 'id'=>$this->identity()->getId()]); ?>">
                                             <span class="glyphicon glyphicon-user" ></span>
-                                            <strong><?= $this->identity()->getUsername() ?></strong>
+                                            <strong><?= $this->escapeHtml($this->identity()->getUsername()) ?></strong>
                                         </a>
                                     </li>
                                     <li>
